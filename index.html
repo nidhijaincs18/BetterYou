@@ -105,7 +105,7 @@
                 <div class="overlay"></div>
                 <div class="content">
                     <h2 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                    margin-bottom: 70px;margin-right: 0;">Dabur <br/>Immunity Boosters</h2>
+                    margin-bottom: 15%;margin-right: 0;">Dabur <br/>Immunity Boosters</h2>
                     <h2 style="margin-right: 150px;margin-bottom: 20px; color: rgb(240, 181, 33);font-size: 2rem;">Upto 15% Off</h2>
                     <button style="margin-right: 150px;">Shop Now</button>
                 </div>
@@ -141,9 +141,9 @@
                 <a href=" "><img src="images/pain-relief.jpg " alt=" "></a>
                 <div class="overlay "></div>
                 <div class="content ">
-                    <h3 style="margin-bottom: 100px; font-size: 2rem;font-family: 'Cormorant Unicase';color: #a4f502; ">Voltarol Pain Relief Gel</h3>
-                    <h2 style=" margin-bottom: 20px;margin-right: 150px; ">Upto 30% off</h2>
-                    <button style="margin-right: 220px;margin-bottom: 20px; ">Shop Now</button>
+                    <h3 style="margin-bottom: 15%; font-size: 2rem;font-family: 'Cormorant Unicase';color: #a4f502; ">Voltarol Pain Relief Gel</h3>
+                    <h2 style=" margin-bottom: 20px;margin-right: 10%; ">Upto 30% off</h2>
+                    <button style="margin-right: 10%;margin-bottom: 20px; ">Shop Now</button>
                 </div>
             </div>
         </div>
@@ -318,7 +318,7 @@
                     <a href=""><img src="images/covid-essentials/dettol-handwash.jpg" alt=""></a>
                 </div>
                 <h4 id="produt-name">Dettol Handwash with Refill 250ml</h4>
-                <h3 id="price">Rs.400</h3>
+                <h3 id="price">Rs.400 <del>Rs.500</del></h3>
                 <button id="add-to-cart">Add To Cart</button>
             </div>
             <div class="essentials">
@@ -343,7 +343,7 @@
                     <a href=""><img src="images/covid-essentials/KN95-facemask.png" alt=""></a>
                 </div>
                 <h4 id="produt-name">KN95 5 Layers Face Mask</h4>
-                <h3 id="price">Rs.550</h3>
+                <h3 id="price">Rs.550<del>Rs.700</del></h3>
                 <button id="add-to-cart">Add To Cart</button>
             </div>
             <div class="essentials">
@@ -360,7 +360,8 @@
                     <a href=""><img src="images/covid-essentials/oximeter.jpg" alt=" "></a>
                 </div>
                 <h4 id="produt-name">Finger Pulse Oximeter with Accuracy</h4>
-                <h3 id="price">Rs.1599</h3>
+                <h3 id="price">Rs.1599 <del>Rs.2000</del>
+                </h3>
                 <button id="add-to-cart">Add To Cart</button>
             </div>
             <div class="essentials">
@@ -437,7 +438,80 @@
     </div>
 
     <!-- FOOTER -->
-    <footer></footer>
+    <footer>
+        <div class="upper-part">
+            <div class="logo">
+                <h1>Better<i class="fas fa-stethoscope"></i></h1>
+            </div>
+            <div class="tagline">
+                <p>BetterYOU, Care For Yourself, is brought to you by us for better establishment of mental and physical health, believes in dispensing high-quality medicines.</p>
+            </div>
+        </div>
+        <div class="lower-part">
+            <div class="about">
+                <h3>Comapany</h3>
+                <ul>
+                    <li>
+                        <a href="">About BetterYOU</a>
+                    </li>
+                    <li>
+                        <a href="">Testimonials</a>
+                    </li>
+                    <li>
+                        <a href="">Terms and Conditions</a>
+                    </li>
+                    <li>
+                        <a href="">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social">
+                <h3>Social</h3>
+                <ul>
+                    <li>
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="links">
+                <h3>Categories</h3>
+                <ul>
+                    <li>
+                        <a href="">Patanjali</a>
+                    </li>
+                    <li>
+                        <a href="">Ayush</a>
+                    </li>
+                    <li>
+                        <a href="">Devices</a>
+                    </li>
+                    <li>
+                        <a href="">Personal Care</a>
+                    </li>
+                    <li>
+                        <a href="">Ayurvedic</a>
+                    </li>
+                </ul>
+            </div>
+            <span></span>
+            <div class="subscibe">
+                <h3>Subscibe To Our Newsletter</h3>
+                <div class="subscribe-btn">
+                    <input type="email" placeholder="Enter your email"> <button><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="bottom">
+            <h5>Copyright &copy; BetterYOU. All rights reserved</h5>
+        </div>
+    </footer>
 
 
     <!-- SCRIPT TAGS -->
@@ -468,6 +542,20 @@
             arrows: true,
             prevArrow: $('.prev-button'),
             nextArrow: $('.next-button'),
+            responsive: [{
+                breakpoint: 950,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: false,
+                }
+            }, {
+                breakpoint: 850,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            }]
         });
         $('.category-shop').slick({
             infinite: true,
@@ -478,6 +566,20 @@
             arrows: true,
             prevArrow: $('.prev-btn'),
             nextArrow: $('.next-btn'),
+            responsive: [{
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    infinite: false,
+                }
+            }, {
+                breakpoint: 850,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            }]
         });
         $('.covid-things').slick({
             infinite: false,
@@ -486,6 +588,20 @@
             arrows: true,
             prevArrow: $('.previous'),
             nextArrow: $('.forward'),
+            responsive: [{
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    infinite: false,
+                }
+            }, {
+                breakpoint: 850,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            }]
         });
         $('.issues').slick({
             infinite: false,
@@ -494,12 +610,39 @@
             arrows: true,
             prevArrow: $('.previous-btn'),
             nextArrow: $('.forward-btn'),
+            responsive: [{
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    infinite: false,
+                }
+            }, {
+                breakpoint: 850,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            }]
         });
     </script>
 
     <!-- OWL CAROUSEL -->
     <script src="js_files/jquery.min.js "></script>
     <script src="js_files/owl.carousel.js "></script>
+
+
+</body>
+
+</html>
+
+</html>
+
+</html>cript>
+
+<!-- OWL CAROUSEL -->
+<script src="js_files/jquery.min.js "></script>
+<script src="js_files/owl.carousel.js "></script>
 
 
 </body>
