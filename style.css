@@ -53,14 +53,14 @@ footer .upper-part .logo i {
     padding: 10px;
 }
 
-#search i {
+#search button {
     background-color: #ddd2d2;
     color: #e6897e;
     font-size: 1.5rem;
     width: 50px;
     height: 100%;
-    padding-top: 8px;
-    padding-left: 11px;
+    border: none;
+    outline: none;
 }
 
 #login {
@@ -358,6 +358,7 @@ header .fas:hover {
 .covid-essentials h1,
 .health-condition h1 {
     margin-left: 25px;
+    margin-bottom: 15px;
     color: #1e2e5e;
     font-size: 1.7rem;
 }
@@ -423,7 +424,7 @@ header .fas:hover {
 
 .banner {
     width: 100%;
-    height: 350px;
+    height: 400px;
     overflow: hidden;
     background-color: #f8c9c3;
 }
@@ -584,6 +585,7 @@ header .fas:hover {
 .covid-essentials .covid-things .essentials h4 {
     height: 50px;
     overflow: hidden;
+    margin-left: 10px;
 }
 
 .covid-essentials .covid-things .essentials h5 {
@@ -601,7 +603,7 @@ header .fas:hover {
     color: teal;
     position: absolute;
     bottom: 15%;
-    left: 2.5%;
+    left: 5%;
 }
 
 .covid-essentials .covid-things .essentials h3 del {
@@ -630,6 +632,10 @@ header .fas:hover {
 
 /* Health Conditions */
 
+.health-condition {
+    margin-bottom: 30px;
+}
+
 .health-condition .issues .conditions {
     height: 210px;
 }
@@ -639,21 +645,43 @@ header .fas:hover {
 
 .introduction {
     width: 100%;
-    background-color: #f8c9c3;
-    padding: 20px;
+    position: relative;
+    height: 450px;
     text-align: center;
+    background-image: url(images/pexels-karolina-grabowska-4386466.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.introduction .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.introduction .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    color: white;
 }
 
 .introduction h1 {
-    color: #1e2e5e;
-    margin: 20px 0;
+    margin: 50px 0 20px;
 }
 
 .introduction p {
     font-size: 1.1rem;
     width: 75%;
     margin: 0 auto 18px;
-    color: #1e2e5e;
 }
 
 
@@ -849,69 +877,53 @@ footer .bottom {
     nav {
         width: 100%;
         background-color: #da847d;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        display: block;
         position: fixed;
         top: 0;
         left: 0;
         overflow: hidden;
         z-index: 100;
     }
-    nav #logo,
-    footer .upper-part .logo {
+    nav #logo {
         color: #fff;
-        margin: 15px 0;
-    }
-    #logo h1,
-    footer .upper-part .logo h1 {
-        font-size: 2.5rem;
-        font-family: 'Cormorant Unicase';
-    }
-    #logo h1 i,
-    footer .upper-part .logo i {
-        font-size: 2.8rem;
+        margin: 15px 0 15px 20px;
+        float: left;
     }
     #search {
-        width: 450px;
+        width: 70%;
         height: 40px;
-        display: flex;
-        flex-direction: row;
+        clear: both;
+        display: block;
+        margin: 15px 0 15px 20px;
+        border: 1px solid #1e2e5e;
     }
     #search input {
-        width: 400px;
-        height: 100%;
+        width: 90%;
+        height: 40px;
         border: none;
         outline: none;
         padding: 10px;
     }
-    #search i {
+    #search button {
         background-color: #ddd2d2;
         color: #e6897e;
         font-size: 1.5rem;
-        width: 50px;
+        width: 9%;
         height: 100%;
-        padding-top: 8px;
-        padding-left: 11px;
+        border: none;
+        outline: none;
     }
     #login {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        width: 15%;
+        margin-top: -15%;
+        justify-content: center;
+        width: 30%;
+        border: 1px solid red;
+        float: right;
     }
     #login i.fa-shopping-bag {
-        margin-right: 5rem;
-        font-size: 2rem;
-        color: #fff;
+        margin-right: 3rem;
     }
-    #login h3 {
-        color: white;
-    }
-    #login h3 i {
-        margin-right: 8px;
-        font-size: 1.5rem;
-    }
+    /* Headings */
     .brand-layout h1,
     .category-section h1,
     .covid-essentials h1,
