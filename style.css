@@ -543,6 +543,7 @@ header .fas:hover {
 .health-condition .issues .conditions h4 {
     color: #1e2e5e;
     margin: 5px;
+    font-weight: 600;
 }
 
 .category-section .category-shop .category h5 {
