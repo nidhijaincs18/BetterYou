@@ -6,12 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BetterYou</title>
-    <link rel="icon" href="images/med-logo.png">
+    <link rel="icon" href="../images/med-logo.png">
+    <link rel="stylesheet" href="categorycss.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
     <!-- Navigation Bar -->
-    <nav>
+    <div class="navigation">
         <div id="logo">
             <h1>Better<i class="fas fa-stethoscope"></i></h1>
         </div>
@@ -23,18 +39,502 @@
             <a href=""><i class="fas fa-shopping-bag"></i></a>
             <h3><i class="fas fa-user-circle"></i>Login</h3>
         </div>
-    </nav>
+    </div>
 
     <!-- Header -->
-    <header>
-        <h1>Patanjali</h1>
-    </header>
+    <section class="main">
+        <header>
+            <h1>Patanjali</h1>
+        </header>
 
-    <div class="filter">
-        <ul>
-            <li></li>
-        </ul>
-    </div>
+        <div class="filter">
+            <ul class="indicator">
+                <li data-filter="all" class="active">
+                    <a href="#">All</a>
+                </li>
+                <li data-filter="Kwath">
+                    <a href="#">Kwath</a>
+                </li>
+                <li data-filter="Oil">
+                    <a href="#">Oil</a>
+                </li>
+                <li data-filter="Churna">
+                    <a href="#">Churna</a>
+                </li>
+                <li data-filter="Syrup">
+                    <a href="#">Syrup</a>
+                </li>
+                <li data-filter="Vati">
+                    <a href="#">Vati</a>
+                </li>
+                <li data-filter="Ras">
+                    <a href="#">Ras</a>
+                </li>
+                <li data-filter="Balm">
+                    <a href="#">Balm</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="card-section">
+            <div class="card-layout" data-category="Balm">
+                <div class="product-image">
+                    <a href=""><img src="../images/ayurvedic/patanjali/balm/patanjali_balm_25_gm_0.jpg" alt=""></a>
+                </div>
+                <h4 id="produt-name">Patanjali Balm 25g</h4>
+                <h3 id="price">Rs.50</h3>
+                <button id="add-to-cart">Add To Cart</button>
+            </div>
+            <div class="card-layout" data-category="Kwath">
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/kwath/1513767426Divyamedhakwath(1).png" alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Patanjali Medha Kwath 100g</h4>
+                <h3 id="price ">Rs.50</h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Churna">
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/churan/1513762507BilwadiChurna(2).png " alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Divya Bilwadi Churan 100g</h4>
+                <h3 id="price ">Rs.400 </h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Kwath">
+                <div class="product-image ">
+                    <h5>10% off</h5>
+                    <a href=" "><img src="../images/ayurvedic/patanjali/kwath/1513768335Divyasarvakalpkwath(2).png " alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Patanjali Sarvakalp Kwath</h4>
+                <h3 id="price ">Rs.45 <del>Rs.55</del></h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Oil">
+                <div class="product-image ">
+                    <h5>15% off</h5>
+                    <a href=" "><img src="../images/ayurvedic/patanjali/oil/1505296191400 x 300 Prasarini Taila 100 ml.png " alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Divya Prasarini Tail 100ml</h4>
+                <h3 id="price ">Rs.120 <del>Rs.141</del></h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Kwath">
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/kwath/1513851307Nirgundikwath(2).png " alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Patanjali Nirgundi Kwath 100g</h4>
+                <h3 id="price ">Rs.20></h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Churna">
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/churan/1513852163Naagkesarchurna(2) (1).png " alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Divya Naagkesar Churna</h4>
+                <h3 id="price ">Rs.80</h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Oil">
+                <div class="product-image ">
+                    <h5>20% off</h5>
+                    <a href=" "><img src="../images/ayurvedic/patanjali/oil/1539240508DivyaShadbinduTaila400-500.png" alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Divya Shadbindu Taila 40ml</h4>
+                <h3 id="price ">Rs.80 <del>Rs.100</del>
+                </h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout" data-category="Kwath">
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/kwath/400x300MaharasnadiKwath.png " alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Patanjali Maharasnadi Kwath 100g</h4>
+                <h3 id="price ">Rs.25</h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Churna">
+                <h5>17% off</h5>
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/churan/1514972164DivyaVatariChurna400x300.png " alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Divya Vatari Churna 100g</h4>
+                <h3 id="price ">Rs.70 <del>Rs.85</del></h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Oil">
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/oil/1549443957kayakalptaila400-500.jpg " alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Divya Kayakalp Taila 100ml</h4>
+                <h3 id="price ">Rs.70</h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Oil">
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/oil/1593771765400x300(1).jpg " alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Divya Anu Taila 20ml</h4>
+                <h3 id="price ">Rs.25</h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Kwath">
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/kwath/1526547284ASHMARIHARKWATH400x300.png " alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Patanjali Ashmarihar Kwath</h4>
+                <h3 id="price ">Rs.50</h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Oil">
+                <div class="product-image ">
+                    <h5>20% off</h5>
+                    <a href=" "><img src="../images/ayurvedic/patanjali/oil/mahabhringrajTaila.jpg" alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Divya Mahabhringraj Taila 100ml</h4>
+                <h3 id="price ">Rs.100 <del>Rs.123</del></h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Churna">
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/churan/1529053792dalchin-400-500.png " alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Divya Dalchini Churna 100g</h4>
+                <h3 id="price ">Rs.50</h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Ras">
+                <h5>10% off</h5>
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/ras/1513766072DivyaAshmariharras(2).png " alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Divya Ashmarihar Ras</h4>
+                <h3 id="price ">Rs.90 <del>100</del></h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Ras">
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/ras/400x300Amvatariras.png " alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Divya Amvatari Ras</h4>
+                <h3 id="price ">Rs.40</h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Oil">
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/oil/peedantakTaila.jpg " alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Divya Peedantak Taila 100ml </h4>
+                <h3 id="price ">Rs.60</h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Kwath">
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/kwath/400x300MulethiKwath.png " alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Patanjali Mulethi Kwath 100g</h4>
+                <h3 id="price ">Rs.50</h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Oil">
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/oil/1505295546400 x 500  Mahamash Taila.png " alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Divya Mahamash Taila</h4>
+                <h3 id="price ">Rs.200</h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Syrup">
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/syrup/1506074173liv amrit syrup 400-500.png " alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Patanjali Amrit Syrup 200ml</h4>
+                <h3 id="price ">Rs.90</h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Kwath">
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/kwath/414TatvzYQL.jpg " alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Patanjali Parijaat Kwath 100g</h4>
+                <h3 id="price ">Rs.20</h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Oil">
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/oil/TEJUSTAILUM400500.png " alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Divya Tejas Taila 100ml</h4>
+                <h3 id="price ">Rs.150</h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Kwath">
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/kwath/400x300ArjunKwath.png " alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Patanjali Arjun Kwath 100g</h4>
+                <h3 id="price ">Rs.20</h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Syrup">
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/syrup/1513759097Abhyaristh(2).png " alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Divya Abhyaristh Syrup</h4>
+                <h3 id="price ">Rs.150</h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Ras">
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/ras/400x300LaxmivilasRas.png" alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Divya Laxmivilas Ras 20g</h4>
+                <h3 id="price ">Rs.50</h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Ras">
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/ras/Patanjali-Ras-Raj-Ras_1000x.webp " alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Divya Rasraj Ras 10g</h4>
+                <h3 id="price ">Rs.500</h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Churna">
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/churan/400x300ShatvarChurna.png" alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Divya Shatavar Churna 100g</h4>
+                <h3 id="price ">Rs.160</h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Ras">
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/ras/400x300Tribuvankrtiras.png " alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Divya Tribuvankirti Ras 20g</h4>
+                <h3 id="price ">Rs.45</h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Kwath">
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/kwath/51DXQRnRNsL._SY450_.jpg " alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Patanjali Swasari Kwath 100g</h4>
+                <h3 id="price ">Rs.50</h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Ras">
+                <h5>15% off</h5>
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/ras/1505380410400 x 300 Swasari Ras.png " alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Divya Swasari Ras 10g</h4>
+                <h3 id="price ">Rs.15 <del>Rs.20</del></h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Vati">
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/ras/411yvAkvoaL._AC_SS450_.jpg " alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Divya Chandraprabha Vati 20g</h4>
+                <h3 id="price ">Rs.50</h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Vati">
+                <h5>8% off</h5>
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/vati/1505301088400 x  500 divya Jwar Nashak Vati.png " alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Divya Jwarnashak Vati </h4>
+                <h3 id="price ">Rs.40 <del>Rs.50</del></h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Kwath">
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/kwath/61Bf9WqeIgL._AC_SL1000_.jpg " alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Patanjali Totla Kwath</h4>
+                <h3 id="price ">Rs.20</h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Vati">
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/vati/1548662362sarivadivati4-3.jpg " alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Divya Sarivadi Vati 20g</h4>
+                <h3 id="price ">Rs.35</h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Vati">
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/vati/1505710418400 x 300  Divya Vrikkdoshhar Vati.png " alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Divya Vrikkdoshhar Vati 20g</h4>
+                <h3 id="price ">Rs.60</h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Ras">
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/ras/patanjali_divya_shirahshooladi_vajra_ras_tablet_30s_0_0.jpg " alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Shirahshooladi Vajra Ras 60 Tab 30g</h4>
+                <h3 id="price ">Rs.20</h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Syrup">
+                <h5>20% off</h5>
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/syrup/400x300PradarsudhaSyrup(Menorrhgia).png " alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Patanjali Pradarsudha Syrup 200ml</h4>
+                <h3 id="price ">Rs.60 <del>Rs.75</del></h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Vati">
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/vati/1521113123vriddhivadhikavati80tab400x300.png " alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Divya Vriddhivadhika Vati 20g</h4>
+                <h3 id="price ">Rs.37</h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Churna">
+                <h5>15% off</h5>
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/churan/400x500Haridrakhand.png " alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Divya Haridrakhand Churna 100g</h4>
+                <h3 id="price ">Rs.50 <del>Rs.66</del></h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Syrup">
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/syrup/1594121683400x300.jpg" alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Patanjali Arvindasav Syrup 225ml</h4>
+                <h3 id="price ">Rs.80</h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Churna">
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/churan/400x500UdarkalpChurna.png " alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Divya Udarkalp Churna 100g</h4>
+                <h3 id="price ">Rs.50</h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Churna">
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/churan/41jTKxbfA3L._AC_UL600_SR600,600_.jpg" alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Divya Avipattikar Churna 100g</h4>
+                <h3 id="price ">Rs.60</h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Syrup">
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/syrup/400x500Lohasava(L).png" alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Divya Lohasava Syrup 450ml</h4>
+                <h3 id="price ">Rs.100</h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Churna">
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/churan/YoganChuran.png " alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Divya Youvan Churan</h4>
+                <h3 id="price ">Rs.250</h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Syrup">
+                <h5>12% off</h5>
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/syrup/swasaripravahi.jpg " alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Divya Swasari Pravahi 250ml</h4>
+                <h3 id="price ">Rs.60 <del>Rs.80</del></h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Syrup">
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/syrup/usirasava.jpg" alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Divya Usirasava 450ml</h4>
+                <h3 id="price ">Rs.75</h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Kwath">
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/kwath/Divya-Giloy-Kwath-1.jpg" alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Divya Giloy Kwath 100g</h4>
+                <h3 id="price ">Rs.40</h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Vati">
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/vati/400x300KutajghanVati80tab.png " alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Divya Kutaj Ghanvati 20g</h4>
+                <h3 id="price ">Rs.50</h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Vati">
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/vati/400300AROGYAVATI40gm.png" alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Divya Arogya Vati 40g</h4>
+                <h3 id="price ">Rs.60</h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Vati">
+                <h5>20% off</h5>
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/vati/400x300NeemGhanvati.png" alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Divya Neem Ghanvati 40g</h4>
+                <h3 id="price ">Rs.80 <del>Rs.100</del></h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Vati">
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/vati/400x500LavangadiVati.png" alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Divya Lavangadi Vati 20g</h4>
+                <h3 id="price ">Rs.40 </h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Vati">
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/vati/giloyghanvati.png" alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Divya Giloy Ghanvati 40g</h4>
+                <h3 id="price ">Rs.100</h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Vati">
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/vati/71qS1wHqqpL._AC_SL1500_.jpg" alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Divya Medohar Vati 50g</h4>
+                <h3 id="price ">Rs.80 </h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+            <div class="card-layout " data-category="Vati">
+                <div class="product-image ">
+                    <a href=" "><img src="../images/ayurvedic/patanjali/vati/patanjali-swasari-vati-500x500.png" alt=" "></a>
+                </div>
+                <h4 id="produt-name ">Divya Swasari Vati 45g</h4>
+                <h3 id="price ">Rs.120 </h3>
+                <button id="add-to-cart ">Add To Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </body>
 
 </html>
