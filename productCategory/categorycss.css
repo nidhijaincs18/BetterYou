@@ -192,7 +192,7 @@ a {
 .card-section .card-layout h4 {
     height: 60px;
     font-size: 1.05rem;
-    padding-left: 10px;
+    padding: 0 10px;
     color: #1e2e5e;
     font-weight: 500;
 }
