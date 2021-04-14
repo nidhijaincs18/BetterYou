@@ -8,6 +8,10 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+html {
+    user-select: none;
+}
+
 nav {
     width: 100%;
     background-color: #da847d;
