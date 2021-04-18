@@ -95,6 +95,29 @@ a {
     font-size: 1.5rem;
 }
 
+#login a {
+    position: relative;
+}
+
+#cart-len {
+    position: absolute;
+    top: -8px;
+    left: 12px;
+    background-color: crimson;
+    font-size: .85em;
+    color: white;
+    opacity: 0.8;
+    overflow: hidden;
+    height: 25px;
+    display: flex;
+    font-weight: bold;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    border-radius: 50%;
+}
+
 
 /* Header */
 

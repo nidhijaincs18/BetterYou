@@ -23,7 +23,6 @@ for (let i = 0; i < indicator.length; i++) {
         }
     }
 }
-
 $('body').on('click', '.add-to-cart ', function() {
     var productName = $(this).closest('.card-layout ').find('.produt-name').text();
     var price = $(this).closest('.card-layout ').find('.price').text();
@@ -46,5 +45,8 @@ $('body').on('click', '.add-to-cart ', function() {
     // Save back to localStorage
     localStorage.setItem('cartList', JSON.stringify(existing));
 
-
+    JSON.parse(localStorage.getItem("cartList")).length ? $("#cart-len").text(JSON.parse(localStorage.getItem("cartList")).length) : $("#cart-len").text(0);
 });
+
+
+JSON.parse(localStorage.getItem("cartList")).length ? $("#cart-len").text(JSON.parse(localStorage.getItem("cartList")).length) : $("#cart-len").text(0);
