@@ -133,6 +133,10 @@ footer .upper-part .logo i {
     width: 100%;
 }
 
+#login a {
+    position: relative;
+}
+
 #cart-len {
     position: absolute;
     top: -8px;
@@ -140,15 +144,15 @@ footer .upper-part .logo i {
     background-color: crimson;
     font-size: .85em;
     color: white;
-    opacity: 0.8;
+    opacity: 0.9;
     overflow: hidden;
-    height: 25px;
+    height: 28px;
     display: flex;
     font-weight: bold;
     overflow: hidden;
     justify-content: center;
     align-items: center;
-    width: 25px;
+    width: 28px;
     border-radius: 50%;
 }
 
