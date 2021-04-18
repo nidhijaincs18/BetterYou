@@ -1,963 +1,1173 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-html {
-    user-select: none;
-}
-
-nav {
-    width: 100%;
-    background-color: #da847d;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: 100;
-}
-
-nav #logo,
-footer .upper-part .logo {
-    color: #fff;
-    margin: 15px 0;
-}
-
-#logo h1,
-footer .upper-part .logo h1 {
-    font-size: 2.5rem;
-    font-family: 'Cormorant Unicase';
-}
-
-#logo h1 i,
-footer .upper-part .logo i {
-    font-size: 2.8rem;
-}
-
-#search {
-    width: 450px;
-    height: 40px;
-    display: flex;
-    flex-direction: row;
-}
-
-#search input {
-    width: 400px;
-    height: 100%;
-    border: none;
-    outline: none;
-    padding: 10px;
-}
-
-#search button {
-    background-color: #ddd2d2;
-    color: #e6897e;
-    font-size: 1.5rem;
-    width: 50px;
-    height: 100%;
-    border: none;
-    outline: none;
-}
-
-#login {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 15%;
-}
-
-#login i.fa-shopping-bag {
-    margin-right: 5rem;
-    font-size: 2rem;
-    color: #fff;
-}
-
-#login h3 {
-    color: white;
-}
-
-#login h3 i {
-    margin-right: 8px;
-    font-size: 1.5rem;
-}
-
-#nav-bar {
-    width: 100%;
-    margin-top: 80px;
-}
-
-#nav-bar ul {
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    padding: 15px;
-}
-
-#nav-bar ul li {
-    list-style: none;
-    text-align: center;
-    margin: 0px 35px 0px 40px;
-}
-
-#nav-bar ul li::after {
-    content: '';
-    width: 0;
-    height: 2px;
-    display: block;
-    background-color: #cc746b;
-    transition: all 0.5s;
-}
-
-#nav-bar ul li a {
-    text-decoration: none;
-    margin: 10px;
-    font-size: 1.2rem;
-    color: #2b4181;
-    transition: 0.5s;
-    font-weight: 600;
-}
-
-#nav-bar ul li:hover a {
-    color: #cc746b;
-}
-
-#nav-bar ul li:hover::after {
-    width: 100%;
-}
-
-#login a {
-    position: relative;
-}
-
-#cart-len {
-    position: absolute;
-    top: -8px;
-    left: 12px;
-    background-color: crimson;
-    font-size: .85em;
-    color: white;
-    opacity: 0.9;
-    overflow: hidden;
-    height: 28px;
-    display: flex;
-    font-weight: bold;
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
-    width: 28px;
-    border-radius: 50%;
-}
-
-
-/* Header Carousel*/
-
-header {
-    width: 100%;
-    height: 500px;
-    position: relative;
-    overflow: hidden;
-}
-
-header .carousel,
-.carousel .slide {
-    width: 100%;
-    height: 100%;
-}
-
-.carousel .slide {
-    position: relative;
-    overflow: hidden;
-}
-
-.carousel .slide img {
-    width: 100%;
-    height: 100%;
-    margin-top: -100px;
-}
-
-.carousel .slide .overlay,
-.slider .offering .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: all 1s;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
-.carousel .slide .content {
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -25%);
-    color: white;
-    text-align: center;
-}
-
-.carousel .slide .content h1 {
-    margin-bottom: 20px;
-    font-size: 2.7rem;
-}
-
-header .fas {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 2;
-    font-size: 2rem;
-    color: white;
-    transition: 0.5s;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    padding: 10px 12px;
-}
-
-header .prev {
-    left: 2%;
-}
-
-header .next {
-    right: 2%;
-}
-
-header .fas:hover {
-    cursor: pointer;
-    color: #cc746b;
-    background-color: white;
-}
-
-
-/* Features */
-
-#features {
-    width: 100%;
-    height: 70px;
-    background-color: rgba(241, 197, 191, 0.8);
-}
-
-#features ul {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 90%;
-    height: 100%;
-    margin: 0 auto;
-}
-
-#features ul li {
-    list-style: none;
-    font-size: 1.25rem;
-    color: #1e2e5e;
-    font-weight: 600;
-}
-
-#features ul li i {
-    font-size: 1.6rem;
-    margin-right: 5px;
-}
-
-
-/* SCROLL BAR OFFERS */
-
-.offers {
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
-    position: relative;
-    margin-top: 40px;
-}
-
-.offers .slider {
-    width: 95%;
-    height: 100%;
-    position: relative;
-    margin: 0 auto;
-}
-
-.offers .slider .offering {
-    width: 25%;
-    height: 270px;
-    margin: 10px 20px;
-    border-radius: 12px;
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-    outline: none;
-    box-shadow: 1px 1px 2px grey;
-}
-
-.offers .slider .offering img {
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-}
-
-.offers .fal,
-.category-section .fal,
-.covid-essentials .fal,
-.health-condition .fal {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 2;
-    font-size: 2rem;
-    color: #fff;
-    transition: 0.5s;
-    width: 50px;
-    height: 50px;
-    background-color: #e99c93;
-    border-radius: 50%;
-    padding: 8px 12px;
-    box-shadow: 2px 2px 3px grey;
-}
-
-.offers .prev-button,
-.category-section .prev-btn,
-.covid-essentials .previous,
-.health-condition .previous-btn {
-    left: 2%;
-}
-
-.offers .next-button,
-.category-section .next-btn,
-.covid-essentials .forward,
-.health-condition .forward-btn {
-    right: 2%;
-    padding: 8px 20px;
-}
-
-.offers .fal:hover,
-.category-section .fal:hover,
-.covid-essentials .fal:hover,
-.health-condition .fal:hover {
-    cursor: pointer;
-}
-
-.slider .offering .content {
-    position: absolute;
-    bottom: 20px;
-    right: 10px;
-    text-align: center;
-    color: white;
-}
-
-.slider .offering .content button {
-    background-color: lightblue;
-    border: none;
-    outline: none;
-    padding: 8px;
-    border-radius: 5px;
-}
-
-.slider .offering:hover .overlay {
-    background-color: rgba(0, 0, 0, 0.15);
-}
-
-
-/* Product Brands */
-
-.brand-layout {
-    width: 100%;
-}
-
-.brand-layout h2,
-.category-section h2,
-.covid-essentials h2,
-.health-condition h2 {
-    margin: 25px 25px 5px;
-    font-size: 1.2rem;
-    color: #1e2e5e;
-    font-family: cursive;
-}
-
-.brand-layout h1,
-.category-section h1,
-.covid-essentials h1,
-.health-condition h1 {
-    margin-left: 25px;
-    margin-bottom: 15px;
-    color: #1e2e5e;
-    font-size: 1.7rem;
-}
-
-.brand-layout .brand-name {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    overflow: hidden;
-    padding: 20px;
-}
-
-.brand-layout .brand-name .brand {
-    position: relative;
-    width: 21.5%;
-    height: 300px;
-    padding: 15px;
-    margin: 20px;
-    transition: 0.4s;
-    background-color: rgba(255, 191, 184, 0.5);
-}
-
-.brand-layout .brand-name .brand img {
-    width: 100%;
-    height: 180px;
-    border-radius: 5px;
-}
-
-.brand-layout .brand-name .brand .brand-logo {
-    position: absolute;
-    width: 80%;
-    top: 160px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #fff;
-    padding: 10px;
-    text-align: center;
-    border-radius: 5px;
-    border: 1.5px solid #5069b4;
-}
-
-.brand-name .brand .brand-logo img {
-    width: 100px;
-    height: 80px;
-    display: block;
-    margin: 0 auto;
-}
-
-.brand-name .brand .brand-logo p {
-    color: #2b4181;
-    font-weight: 600;
-}
-
-.brand-layout .brand-name .brand:hover,
-.category-section .category-shop .category:hover,
-.covid-essentials .covid-things .essentials:hover,
-.health-condition .issues .conditions:hover {
-    box-shadow: 1px 1px 3px 2px rgb(165, 164, 164);
-}
-
-
-/* shipping section  */
-
-.banner {
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-    background-color: #f8c9c3;
-}
-
-.banner img {
-    width: 45%;
-    height: 90%;
-    margin: 20px 0 0 20px;
-    float: left;
-}
-
-.banner .content {
-    height: 100%;
-    padding: 100px 20px 0;
-    width: 50%;
-    float: right;
-}
-
-.banner .content h1 {
-    font-size: 3rem;
-    letter-spacing: 2px;
-    color: #1e2e5e;
-    margin-bottom: 10px;
-}
-
-.banner .content h4 {
-    font-size: 1.2rem;
-    margin-left: 120px;
-    color: #994d44;
-    margin-bottom: 30px;
-}
-
-.banner .content a {
-    text-decoration: none;
-    text-align: center;
-    display: block;
-    padding: 10px;
-    width: 150px;
-    background-color: #cc746b;
-    color: white;
-    border-radius: 5px;
-    margin-left: 170px;
-    transition: 0.5s;
-    font-weight: 600;
-}
-
-.banner .content a:hover {
-    background-color: #fff;
-    color: #cc746b;
-}
-
-
-/* Popular Categries */
-
-.category-section,
-.covid-essentials,
-.health-condition {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-.category-section h2 {
-    margin: 40px 0 5px 25px;
-}
-
-.category-section p {
-    margin: 0 0 20px 30px;
-    color: #1e2e5e;
-}
-
-.category-section .category-shop,
-.covid-essentials .covid-things,
-.health-condition .issues {
-    width: 95%;
-    height: 100%;
-    position: relative;
-    margin: 0 auto 10px;
-}
-
-.category-section .category-shop .category,
-.covid-essentials .covid-things .essentials,
-.health-condition .issues .conditions {
-    width: 15%;
-    height: 240px;
-    margin: 10px 20px;
-    border-radius: 12px;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    border: 1px solid grey;
-    transition: 0.4s;
-}
-
-.category-section .category-shop .category a,
-.covid-essentials .covid-things .essentials a,
-.health-condition .issues .conditions a {
-    outline: none;
-}
-
-.category-section .category-shop .category img,
-.covid-essentials .covid-things .essentials img,
-.health-condition .issues .conditions img {
-    width: 100%;
-    height: 170px;
-    margin-bottom: 5px;
-}
-
-.category-section .fal,
-.health-condition .fal {
-    top: 65%;
-}
-
-.category-section .category-shop .category h4,
-.covid-essentials .covid-things .essentials h4,
-.health-condition .issues .conditions h4 {
-    color: #1e2e5e;
-    margin: 5px;
-    font-weight: 600;
-}
-
-.category-section .category-shop .category h5 {
-    color: #1e2e5e;
-    width: 100px;
-    padding: 5px;
-    margin: 0 auto;
-    border-radius: 5px;
-    background-color: #e6897e;
-}
-
-
-/* Covid Essentials */
-
-.covid-essentials .fal {
-    top: 60%;
-}
-
-.covid-essentials .covid-things .essentials {
-    width: 16%;
-    margin: 10px 15px;
-    height: 340px;
-    text-align: left;
-}
-
-.covid-essentials .covid-things .essentials .product-image {
-    position: relative;
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-}
-
-.covid-essentials .covid-things .essentials img {
-    height: 200px;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.covid-essentials .covid-things .essentials h4 {
-    height: 50px;
-    overflow: hidden;
-    margin-left: 10px;
-}
-
-.covid-essentials .covid-things .essentials h5 {
-    z-index: 2;
-    position: absolute;
-    top: 5%;
-    left: -0.7%;
-    padding: 5px;
-    background-color: lightblue;
-    border-radius: 5px;
-    color: #1e2e5e;
-}
-
-.covid-essentials .covid-things .essentials h3 {
-    color: teal;
-    position: absolute;
-    bottom: 15%;
-    left: 5%;
-}
-
-.covid-essentials .covid-things .essentials h3 del {
-    font-size: 0.9rem;
-    color: #2b4181;
-    margin-left: 5px;
-    font-weight: 200;
-}
-
-.covid-essentials .covid-things .essentials button {
-    width: 95%;
-    position: absolute;
-    bottom: 3%;
-    left: 2.5%;
-    padding: 7px 0;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #1e2e5e;
-    background-color: #da847d;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-
-/* Health Conditions */
-
-.health-condition {
-    margin-bottom: 30px;
-}
-
-.health-condition .issues .conditions {
-    height: 210px;
-}
-
-
-/* Introduction */
-
-.introduction {
-    width: 100%;
-    position: relative;
-    height: 450px;
-    text-align: center;
-    background-image: url(images/pexels-karolina-grabowska-4386466.jpg);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.introduction .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 0;
-}
-
-.introduction .content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    color: white;
-}
-
-.introduction h1 {
-    margin: 50px 0 20px;
-}
-
-.introduction p {
-    font-size: 1.1rem;
-    width: 75%;
-    margin: 0 auto 18px;
-}
-
-
-/* Footer */
-
-footer {
-    width: 100%;
-    background-color: #1e2e5e;
-    overflow: hidden;
-}
-
-footer .upper-part {
-    width: 100%;
-    display: flex;
-    color: white;
-    margin-top: 25px;
-}
-
-footer .upper-part .logo {
-    margin: 25px 40px 20px 60px;
-    padding: 5px;
-    width: 15%;
-}
-
-footer .upper-part .tagline {
-    padding: 25px;
-    width: 50%;
-    margin: 10px;
-    border-left: 2px solid white;
-}
-
-footer .lower-part {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    color: white;
-    padding: 15px 0;
-}
-
-footer .lower-part ul {
-    margin-top: 15px;
-}
-
-footer .lower-part ul li {
-    list-style: none;
-    margin-bottom: 5px;
-}
-
-footer .lower-part ul li a {
-    text-decoration: none;
-    color: white;
-    transition: 0.4s;
-}
-
-footer .lower-part .social {
-    height: 80px;
-}
-
-footer .lower-part .social ul {
-    display: flex;
-}
-
-footer .lower-part .social h3 {
-    text-align: center;
-}
-
-footer .lower-part .social ul li {
-    margin-right: 12px;
-}
-
-footer .lower-part .social ul li i {
-    font-size: 1.5rem;
-}
-
-footer .lower-part ul li a:hover {
-    color: #e99c93;
-}
-
-footer .lower-part span {
-    width: 3px;
-    background-color: #fff;
-}
-
-footer .lower-part .subscibe h3 {
-    margin-bottom: 25px;
-}
-
-footer .lower-part .subscibe .subscribe-btn {
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-}
-
-footer .lower-part .subscibe .subscribe-btn input {
-    padding: 10px;
-    height: 40px;
-}
-
-footer .lower-part .subscibe .subscribe-btn button {
-    background-color: #fff;
-    color: #1e2e5e;
-    padding: 6px 8px;
-    font-size: 1.5rem;
-    margin-left: 5px;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-}
-
-footer hr {
-    width: 90%;
-    color: lightgrey;
-    margin: 20px auto;
-}
-
-footer .bottom {
-    width: 100%;
-    text-align: center;
-    color: white;
-    margin-bottom: 15px;
-}
-
-
-/* Responsive */
-
-@media screen and (max-width:1055px) {
-    nav {
-        justify-content: space-evenly;
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
-    #search {
-        width: 400px;
+    
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
-    #search input {
-        width: 350px;
+    
+    html {
+        user-select: none;
     }
-    #login {
-        justify-content: space-between;
-        width: 18%;
-    }
-    #login i.fa-shopping-bag {
-        margin-right: 0%;
-    }
-    #login h3 {
-        width: 60%;
-    }
-    #nav-bar ul {
-        width: 95%;
-    }
-    #nav-bar ul li {
-        margin: 0px 25px;
-    }
-    #nav-bar ul li a {
-        margin: 5px;
-        font-size: 1.1rem;
-    }
-    /* Product Brands */
-    .brand-layout .brand-name {
-        padding: 30px;
-    }
-    .brand-layout .brand-name .brand {
-        width: 25%;
-        padding: 15px;
-        margin: 20px 30px;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .carousel .slide img {
-        margin-top: 0px;
-    }
-    #features ul {
-        width: 100%;
-    }
-    .offers .slider .offering {
-        width: 23%;
-        height: 290px;
-        margin: 10px 15px;
-    }
-    .banner .content {
-        padding: 70px 20px 0;
-    }
-    .banner .content h1 {
-        font-size: 2rem;
-    }
-    .banner .content h4,
-    .banner .content a {
-        margin-left: 8%;
-    }
-}
-
-@media screen and (max-width:830px) {
+    
     nav {
         width: 100%;
         background-color: #da847d;
-        display: block;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
         position: fixed;
         top: 0;
         left: 0;
         overflow: hidden;
         z-index: 100;
     }
-    nav #logo {
+    
+    nav #logo,
+    footer .upper-part .logo {
         color: #fff;
-        margin: 15px 0 15px 20px;
-        float: left;
+        margin: 15px 0;
     }
+    
+    #logo h1,
+    footer .upper-part .logo h1 {
+        font-size: 2.5rem;
+        font-family: 'Cormorant Unicase';
+    }
+    
+    #logo h1 i,
+    footer .upper-part .logo i {
+        font-size: 2.8rem;
+    }
+    
     #search {
-        width: 70%;
+        width: 450px;
         height: 40px;
-        clear: both;
-        display: block;
-        margin: 15px 0 15px 20px;
-        border: 1px solid #1e2e5e;
+        display: flex;
+        flex-direction: row;
     }
+    
     #search input {
-        width: 90%;
-        height: 40px;
+        width: 400px;
+        height: 100%;
         border: none;
         outline: none;
         padding: 10px;
     }
+    
     #search button {
         background-color: #ddd2d2;
         color: #e6897e;
         font-size: 1.5rem;
-        width: 9%;
+        width: 50px;
         height: 100%;
         border: none;
         outline: none;
     }
+    
     #login {
-        margin-top: -15%;
-        justify-content: center;
-        width: 30%;
-        border: 1px solid red;
-        float: right;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 15%;
     }
+    
     #login i.fa-shopping-bag {
-        margin-right: 3rem;
+        margin-right: 5rem;
+        font-size: 2rem;
+        color: #fff;
     }
-    /* Headings */
+    
+    #login h3 {
+        color: white;
+    }
+    
+    #login h3 i {
+        margin-right: 8px;
+        font-size: 1.5rem;
+    }
+    
+    #nav-bar {
+        width: 100%;
+        margin-top: 80px;
+    }
+    
+    #nav-bar ul {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        padding: 15px;
+    }
+    
+    #nav-bar ul li {
+        list-style: none;
+        text-align: center;
+        margin: 0px 35px 0px 40px;
+    }
+    
+    #nav-bar ul li::after {
+        content: '';
+        width: 0;
+        height: 2px;
+        display: block;
+        background-color: #cc746b;
+        transition: all 0.5s;
+    }
+    
+    #nav-bar ul li a {
+        text-decoration: none;
+        margin: 10px;
+        font-size: 1.2rem;
+        color: #2b4181;
+        transition: 0.5s;
+        font-weight: 600;
+    }
+    
+    #nav-bar ul li:hover a {
+        color: #cc746b;
+    }
+    
+    #nav-bar ul li:hover::after {
+        width: 100%;
+    }
+    
+    #login a {
+        position: relative;
+    }
+    
+    #cart-len {
+        position: absolute;
+        top: -8px;
+        left: 12px;
+        background-color: crimson;
+        font-size: .85em;
+        color: white;
+        opacity: 0.9;
+        overflow: hidden;
+        height: 28px;
+        display: flex;
+        font-weight: bold;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        width: 28px;
+        border-radius: 50%;
+    }
+    /* Header Carousel*/
+    
+    header {
+        width: 100%;
+        height: 500px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    header .carousel,
+    .carousel .slide {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .carousel .slide {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .carousel .slide img {
+        width: 100%;
+        height: 100%;
+        margin-top: -100px;
+    }
+    
+    .carousel .slide .overlay,
+    .slider .offering .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: all 1s;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    
+    .carousel .slide .content {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -25%);
+        color: white;
+        text-align: center;
+    }
+    
+    .carousel .slide .content h1 {
+        margin-bottom: 20px;
+        font-size: 2.7rem;
+    }
+    
+    header .fas {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+        font-size: 2rem;
+        color: white;
+        transition: 0.5s;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        padding: 10px 12px;
+    }
+    
+    header .prev {
+        left: 2%;
+    }
+    
+    header .next {
+        right: 2%;
+    }
+    
+    header .fas:hover {
+        cursor: pointer;
+        color: #cc746b;
+        background-color: white;
+    }
+    /* Features */
+    
+    #features {
+        width: 100%;
+        height: 70px;
+        background-color: rgba(241, 197, 191, 0.8);
+    }
+    
+    #features ul {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+    }
+    
+    #features ul li {
+        list-style: none;
+        font-size: 1.25rem;
+        color: #1e2e5e;
+        font-weight: 600;
+    }
+    
+    #features ul li i {
+        font-size: 1.6rem;
+        margin-right: 5px;
+    }
+    /* SCROLL BAR OFFERS */
+    
+    .offers {
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+        margin-top: 40px;
+    }
+    
+    .offers .slider {
+        width: 95%;
+        height: 100%;
+        position: relative;
+        margin: 0 auto;
+    }
+    
+    .offers .slider .offering {
+        width: 25%;
+        height: 270px;
+        margin: 10px 20px;
+        border-radius: 12px;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        outline: none;
+        box-shadow: 1px 1px 2px grey;
+    }
+    
+    .offers .slider .offering img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+    
+    .offers .fal,
+    .category-section .fal,
+    .covid-essentials .fal,
+    .health-condition .fal {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+        font-size: 2rem;
+        color: #fff;
+        transition: 0.5s;
+        width: 50px;
+        height: 50px;
+        background-color: #e99c93;
+        border-radius: 50%;
+        padding: 8px 12px;
+        box-shadow: 2px 2px 3px grey;
+    }
+    
+    .offers .prev-button,
+    .category-section .prev-btn,
+    .covid-essentials .previous,
+    .health-condition .previous-btn {
+        left: 2%;
+    }
+    
+    .offers .next-button,
+    .category-section .next-btn,
+    .covid-essentials .forward,
+    .health-condition .forward-btn {
+        right: 2%;
+        padding: 8px 20px;
+    }
+    
+    .offers .fal:hover,
+    .category-section .fal:hover,
+    .covid-essentials .fal:hover,
+    .health-condition .fal:hover {
+        cursor: pointer;
+    }
+    
+    .slider .offering .content {
+        position: absolute;
+        bottom: 20px;
+        right: 10px;
+        text-align: center;
+        color: white;
+    }
+    
+    .slider .offering .content button {
+        background-color: lightblue;
+        border: none;
+        outline: none;
+        padding: 8px;
+        border-radius: 5px;
+    }
+    
+    .slider .offering:hover .overlay {
+        background-color: rgba(0, 0, 0, 0.15);
+    }
+    /* Product Brands */
+    
+    .brand-layout {
+        width: 100%;
+    }
+    
+    .brand-layout h2,
+    .category-section h2,
+    .covid-essentials h2,
+    .health-condition h2 {
+        margin: 25px 25px 5px;
+        font-size: 1.2rem;
+        color: #1e2e5e;
+        font-family: cursive;
+    }
+    
     .brand-layout h1,
     .category-section h1,
     .covid-essentials h1,
     .health-condition h1 {
         margin-left: 25px;
+        margin-bottom: 15px;
         color: #1e2e5e;
+        font-size: 1.7rem;
+    }
+    
+    .brand-layout .brand-name {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+        padding: 20px;
+    }
+    
+    .brand-layout .brand-name .brand {
+        position: relative;
+        width: 21.5%;
+        height: 300px;
+        padding: 15px;
+        margin: 20px;
+        transition: 0.4s;
+        background-color: rgba(255, 191, 184, 0.5);
+    }
+    
+    .brand-layout .brand-name .brand img {
+        width: 100%;
+        height: 180px;
+        border-radius: 5px;
+    }
+    
+    .brand-layout .brand-name .brand .brand-logo {
+        position: absolute;
+        width: 80%;
+        top: 160px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #fff;
+        padding: 10px;
+        text-align: center;
+        border-radius: 5px;
+        border: 1.5px solid #5069b4;
+    }
+    
+    .brand-name .brand .brand-logo img {
+        width: 100px;
+        height: 80px;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .brand-name .brand .brand-logo p {
+        color: #2b4181;
+        font-weight: 600;
+    }
+    
+    .brand-layout .brand-name .brand:hover,
+    .category-section .category-shop .category:hover,
+    .covid-essentials .covid-things .essentials:hover,
+    .health-condition .issues .conditions:hover {
+        box-shadow: 1px 1px 3px 2px rgb(165, 164, 164);
+    }
+    /* shipping section  */
+    
+    .banner {
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        background-color: #f8c9c3;
+    }
+    
+    .banner img {
+        width: 45%;
+        height: 90%;
+        margin: 20px 0 0 20px;
+        float: left;
+    }
+    
+    .banner .content {
+        height: 100%;
+        padding: 100px 20px 0;
+        width: 50%;
+        float: right;
+    }
+    
+    .banner .content h1 {
+        font-size: 3rem;
+        letter-spacing: 2px;
+        color: #1e2e5e;
+        margin-bottom: 10px;
+    }
+    
+    .banner .content h4 {
+        font-size: 1.2rem;
+        margin-left: 120px;
+        color: #994d44;
+        margin-bottom: 30px;
+    }
+    
+    .banner .content a {
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        padding: 10px;
+        width: 150px;
+        background-color: #cc746b;
+        color: white;
+        border-radius: 5px;
+        margin-left: 170px;
+        transition: 0.5s;
+        font-weight: 600;
+    }
+    
+    .banner .content a:hover {
+        background-color: #fff;
+        color: #cc746b;
+    }
+    /* Popular Categries */
+    
+    .category-section,
+    .covid-essentials,
+    .health-condition {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .category-section h2 {
+        margin: 40px 0 5px 25px;
+    }
+    
+    .category-section p {
+        margin: 0 0 20px 30px;
+        color: #1e2e5e;
+    }
+    
+    .category-section .category-shop,
+    .covid-essentials .covid-things,
+    .health-condition .issues {
+        width: 95%;
+        height: 100%;
+        position: relative;
+        margin: 0 auto 10px;
+    }
+    
+    .category-section .category-shop .category,
+    .covid-essentials .covid-things .essentials,
+    .health-condition .issues .conditions {
+        width: 15%;
+        height: 240px;
+        margin: 10px 20px;
+        border-radius: 12px;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        border: 1px solid grey;
+        transition: 0.4s;
+    }
+    
+    .category-section .category-shop .category a,
+    .covid-essentials .covid-things .essentials a,
+    .health-condition .issues .conditions a {
+        outline: none;
+    }
+    
+    .category-section .category-shop .category img,
+    .covid-essentials .covid-things .essentials img,
+    .health-condition .issues .conditions img {
+        width: 100%;
+        height: 170px;
+        margin-bottom: 5px;
+    }
+    
+    .category-section .fal,
+    .health-condition .fal {
+        top: 65%;
+    }
+    
+    .category-section .category-shop .category h4,
+    .covid-essentials .covid-things .essentials h4,
+    .health-condition .issues .conditions h4 {
+        color: #1e2e5e;
+        margin: 5px;
+        font-weight: 600;
+    }
+    
+    .category-section .category-shop .category h5 {
+        color: #1e2e5e;
+        width: 100px;
+        padding: 5px;
+        margin: 0 auto;
+        border-radius: 5px;
+        background-color: #e6897e;
+    }
+    /* Covid Essentials */
+    
+    .covid-essentials .fal {
+        top: 60%;
+    }
+    
+    .covid-essentials .covid-things .essentials {
+        width: 16%;
+        margin: 10px 15px;
+        height: 340px;
+        text-align: left;
+    }
+    
+    .covid-essentials .covid-things .essentials .product-image {
+        position: relative;
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+    }
+    
+    .covid-essentials .covid-things .essentials img {
+        height: 200px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    .covid-essentials .covid-things .essentials h4 {
+        height: 50px;
+        overflow: hidden;
+        margin-left: 10px;
+    }
+    
+    .covid-essentials .covid-things .essentials h5 {
+        z-index: 2;
+        position: absolute;
+        top: 5%;
+        left: -0.7%;
+        padding: 5px;
+        background-color: lightblue;
+        border-radius: 5px;
+        color: #1e2e5e;
+    }
+    
+    .covid-essentials .covid-things .essentials h3 {
+        color: teal;
+        position: absolute;
+        bottom: 15%;
+        left: 5%;
+    }
+    
+    .covid-essentials .covid-things .essentials h3 del {
+        font-size: 0.9rem;
+        color: #2b4181;
+        margin-left: 5px;
+        font-weight: 200;
+    }
+    
+    .covid-essentials .covid-things .essentials button {
+        width: 95%;
+        position: absolute;
+        bottom: 3%;
+        left: 2.5%;
+        padding: 7px 0;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #1e2e5e;
+        background-color: #da847d;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    /* Health Conditions */
+    
+    .health-condition {
+        margin-bottom: 30px;
+    }
+    
+    .health-condition .issues .conditions {
+        height: 210px;
+    }
+    /* Introduction */
+    
+    .introduction {
+        width: 100%;
+        position: relative;
+        height: 450px;
+        text-align: center;
+        background-image: url(images/pexels-karolina-grabowska-4386466.jpg);
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    
+    .introduction .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 0;
+    }
+    
+    .introduction .content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        color: white;
+    }
+    
+    .introduction h1 {
+        margin: 50px 0 20px;
+    }
+    
+    .introduction p {
+        font-size: 1.1rem;
+        width: 75%;
+        margin: 0 auto 18px;
+    }
+    /* Footer */
+    
+    footer {
+        width: 100%;
+        background-color: #1e2e5e;
+        overflow: hidden;
+    }
+    
+    footer .upper-part {
+        width: 100%;
+        display: flex;
+        color: white;
+        margin-top: 25px;
+    }
+    
+    footer .upper-part .logo {
+        margin: 25px 40px 20px 60px;
+        padding: 5px;
+        width: 15%;
+    }
+    
+    footer .upper-part .tagline {
+        padding: 25px;
+        width: 50%;
+        margin: 10px;
+        border-left: 2px solid white;
+    }
+    
+    footer .lower-part {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        color: white;
+        padding: 15px 0;
+    }
+    
+    footer .lower-part ul {
+        margin-top: 15px;
+    }
+    
+    footer .lower-part ul li {
+        list-style: none;
+        margin-bottom: 5px;
+    }
+    
+    footer .lower-part ul li a {
+        text-decoration: none;
+        color: white;
+        transition: 0.4s;
+    }
+    
+    footer .lower-part .social {
+        height: 80px;
+    }
+    
+    footer .lower-part .social ul {
+        display: flex;
+    }
+    
+    footer .lower-part .social h3 {
+        text-align: center;
+    }
+    
+    footer .lower-part .social ul li {
+        margin-right: 12px;
+    }
+    
+    footer .lower-part .social ul li i {
         font-size: 1.5rem;
     }
-}
+    
+    footer .lower-part ul li a:hover {
+        color: #e99c93;
+    }
+    
+    footer .lower-part span {
+        width: 3px;
+        background-color: #fff;
+    }
+    
+    footer .lower-part .subscibe h3 {
+        margin-bottom: 25px;
+    }
+    
+    footer .lower-part .subscibe .subscribe-btn {
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+    }
+    
+    footer .lower-part .subscibe .subscribe-btn input {
+        padding: 10px;
+        height: 40px;
+    }
+    
+    footer .lower-part .subscibe .subscribe-btn button {
+        background-color: #fff;
+        color: #1e2e5e;
+        padding: 6px 8px;
+        font-size: 1.5rem;
+        margin-left: 5px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    
+    footer hr {
+        width: 90%;
+        color: lightgrey;
+        margin: 20px auto;
+    }
+    
+    footer .bottom {
+        width: 100%;
+        text-align: center;
+        color: white;
+        margin-bottom: 15px;
+    }
+    /* Responsive */
+    
+    @media screen and (max-width:1055px) {
+        nav {
+            justify-content: space-evenly;
+        }
+        #search {
+            width: 400px;
+        }
+        #search input {
+            width: 350px;
+        }
+        #login {
+            justify-content: space-between;
+            width: 18%;
+        }
+        #login i.fa-shopping-bag {
+            margin-right: 0%;
+        }
+        #login h3 {
+            width: 60%;
+        }
+        #nav-bar ul {
+            width: 95%;
+        }
+        #nav-bar ul li {
+            margin: 0px 25px;
+        }
+        #nav-bar ul li a {
+            margin: 5px;
+            font-size: 1.1rem;
+        }
+        /* Product Brands */
+        .brand-layout .brand-name {
+            padding: 30px;
+        }
+        .brand-layout .brand-name .brand {
+            width: 25%;
+            padding: 15px;
+            margin: 20px 30px;
+        }
+    }
+    
+    @media screen and (max-width: 1000px) {
+        .carousel .slide img {
+            margin-top: 0px;
+        }
+        #features ul {
+            width: 100%;
+        }
+        .offers .slider .offering {
+            width: 23%;
+            height: 290px;
+            margin: 10px 15px;
+        }
+        .banner .content {
+            padding: 70px 20px 0;
+        }
+        .banner .content h1 {
+            font-size: 2rem;
+        }
+        .banner .content h4,
+        .banner .content a {
+            margin-left: 8%;
+        }
+        footer .upper-part .logo {
+            margin: 25px 40px 20px;
+            width: 25%;
+        }
+    }
+    
+    @media screen and (max-width:830px) {
+        nav {
+            display: block;
+        }
+        nav #logo {
+            color: #fff;
+            margin: 15px 0 15px 20px;
+            float: left;
+        }
+        #search {
+            width: 70%;
+            height: 40px;
+            clear: both;
+            display: block;
+            margin: 15px 0 20px 20px;
+        }
+        #search input {
+            width: 90%;
+            height: 40px;
+            border: none;
+            outline: none;
+            padding: 8px;
+        }
+        #search button {
+            background-color: #ddd2d2;
+            color: #e6897e;
+            font-size: 1.5rem;
+            width: 9%;
+            height: 100%;
+            border: none;
+            outline: none;
+        }
+        #login {
+            margin-top: -15%;
+            justify-content: center;
+            width: 30%;
+            float: right;
+        }
+        #login i.fa-shopping-bag {
+            margin-right: 3rem;
+        }
+        #nav-bar {
+            margin-top: 140px;
+        }
+        /* Headings */
+        .brand-layout h1,
+        .category-section h1,
+        .covid-essentials h1,
+        .health-condition h1 {
+            margin-left: 25px;
+            color: #1e2e5e;
+            font-size: 1.5rem;
+            margin-bottom: 0px;
+        }
+        .brand-layout .brand-name {
+            padding: 2%;
+        }
+        .brand-layout .brand-name .brand {
+            width: 35%;
+            padding: 10px;
+            margin: 3% 5.5%;
+        }
+        footer .upper-part .tagline {
+            padding: 20px;
+            width: 65%;
+        }
+    }
+    
+    @media screen and (max-width:750px) {
+        #nav-bar {
+            display: none;
+        }
+        header {
+            margin-top: 75px;
+        }
+        .carousel .slide img {
+            margin-top: 0px;
+        }
+        .carousel .slide .content h1 {
+            font-size: 2.3rem;
+        }
+        header .fas {
+            top: 40%;
+            transform: translateY(-40%);
+        }
+        #features {
+            margin-top: -1%;
+        }
+        #features ul li span {
+            display: none;
+        }
+        .introduction h1 {
+            margin: 30px 0 10px;
+        }
+        .introduction p {
+            font-size: 1.1rem;
+            width: 85%;
+            margin: 0 auto 15px;
+        }
+    }
+    
+    @media screen and (max-width:650px) {
+        nav #logo {
+            color: #fff;
+            margin: 15px 0 15px 20px;
+            float: left;
+        }
+        #search {
+            display: none;
+        }
+        #login {
+            margin-top: 25px;
+            justify-content: space-between;
+            width: 35%;
+        }
+        #features {
+            margin-top: -20%;
+        }
+        .banner {
+            position: relative;
+        }
+        .banner img {
+            width: 50%;
+            height: 90%;
+            margin: 20px 0 0 20px;
+            float: left;
+        }
+        .banner .content {
+            height: 100%;
+            padding: 100px 20px 0;
+            width: 46%;
+            float: right;
+        }
+        .banner .content h1 {
+            font-size: 2rem;
+            letter-spacing: 2px;
+            color: #1e2e5e;
+            margin-bottom: 10px;
+        }
+        .banner .content h4 {
+            font-size: 1.2rem;
+            margin-left: 0px;
+            color: #994d44;
+            margin-bottom: 30px;
+        }
+        footer .upper-part .logo {
+            margin: 25px 0px 20px 30px;
+            width: 35%;
+        }
+        footer .upper-part .logo h1 {
+            font-size: 2rem;
+        }
+        footer .upper-part .tagline {
+            width: 75%;
+            padding: 15px;
+        }
+        footer .lower-part {
+            width: 100%;
+            display: block;
+            color: white;
+            padding: 15px 0;
+        }
+        footer .lower-part .about,
+        footer .lower-part .social,
+        footer .lower-part .links {
+            margin-bottom: 20px;
+        }
+        footer .lower-part h3 {
+            text-align: center;
+        }
+        footer .lower-part ul li {
+            text-align: center;
+        }
+        footer .lower-part .social ul {
+            justify-content: center;
+        }
+        footer .subscibe .subscribe-btn {
+            justify-content: center;
+        }
+    }
+    
+    @media screen and (max-width:550px) {
+        #logo h1 {
+            font-size: 2.3rem;
+        }
+        #logo h1 i,
+        footer .upper-part .logo i {
+            font-size: 2.5rem;
+        }
+        #login i.fa-shopping-bag {
+            font-size: 1.5rem;
+        }
+        #login h3 i {
+            font-size: 1.5rem;
+        }
+        .carousel .slide .content h1 {
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+        header .fas {
+            top: 30%;
+            transform: translateY(-30%);
+        }
+        #features {
+            margin-top: -40%;
+        }
+        .banner img {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            display: block;
+            float: none;
+            opacity: 0.5;
+        }
+        .banner .content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            padding: 0;
+            float: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .brand-layout .brand-name {
+            padding: 2%;
+        }
+        .brand-layout .brand-name .brand {
+            width: 70%;
+            padding: 10px;
+            margin: 3% 15%;
+        }
+        .introduction {
+            height: 480px;
+        }
+        .introduction h1 {
+            margin: 20px 0 10px;
+            font-size: 1.5rem;
+        }
+        .introduction p {
+            font-size: 1rem;
+            width: 95%;
+            margin: 0 auto 15px;
+            text-align: justify;
+        }
+        footer .upper-part .logo {
+            margin: 25px 0px 20px 30px;
+            width: 35%;
+        }
+    }
+    
+    @media screen and (max-width:420px) {
+        #logo h1 {
+            font-size: 2rem;
+        }
+        #logo h1 i,
+        footer .upper-part .logo i {
+            font-size: 2.3rem;
+        }
+        #login {
+            width: 45%;
+        }
+        header {
+            margin-top: 70px;
+        }
+        .carousel .slide .content h1 {
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+        }
+        header .fas {
+            font-size: 1.5rem;
+            top: 20%;
+            transform: translateY(-20%);
+        }
+        #features {
+            display: none;
+        }
+        .offers {
+            margin-top: -60%;
+        }
+        footer .upper-part .logo {
+            margin: 25px 0px 20px 10px;
+            width: 40%;
+        }
+    }

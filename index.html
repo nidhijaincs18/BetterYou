@@ -89,10 +89,10 @@
     <!-- Features -->
     <div id="features">
         <ul>
-            <li><i class="fas fa-award"></i>Genuine Medicines</li>
-            <li><i class="fas fa-truck"></i>Timely Delivery</li>
-            <li><i class="fas fa-shield-check"></i>Secure Payments</li>
-            <li><i class="fas fa-percent"></i>Special Offers</li>
+            <li><i class="fas fa-award"></i> <span>Genuine Medicines</span></li>
+            <li><i class="fas fa-truck"></i> <span>Timely Delivery</span> </li>
+            <li><i class="fas fa-shield-check"></i><span>Secure Payments</span></li>
+            <li><i class="fas fa-percent"></i><span>Special Offers</span></li>
         </ul>
     </div>
 
@@ -453,7 +453,7 @@
         </div>
         <div class="lower-part">
             <div class="about">
-                <h3>Comapany</h3>
+                <h3>Company</h3>
                 <ul>
                     <li>
                         <a href="">About BetterYOU</a>
@@ -559,6 +559,12 @@
                     slidesToShow: 2,
                     slidesToScroll: 1
                 }
+            }, {
+                breakpoint: 560,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
             }]
         });
         $('.category-shop').slick({
@@ -583,6 +589,18 @@
                     slidesToShow: 3,
                     slidesToScroll: 1
                 }
+            }, {
+                breakpoint: 700,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            }, {
+                breakpoint: 450,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
             }]
         });
         $('.covid-things').slick({
@@ -605,6 +623,18 @@
                     slidesToShow: 3,
                     slidesToScroll: 1
                 }
+            }, {
+                breakpoint: 700,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            }, {
+                breakpoint: 450,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
             }]
         });
         $('.issues').slick({
@@ -625,6 +655,18 @@
                 breakpoint: 850,
                 settings: {
                     slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            }, {
+                breakpoint: 700,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            }, {
+                breakpoint: 450,
+                settings: {
+                    slidesToShow: 1,
                     slidesToScroll: 1
                 }
             }]
