@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    user-select: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navigation {
+    width: 100%;
+    background-color: #da847d;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.navigation #logo {
+    color: #fff;
+    margin: 15px 0;
+}
+
+#logo h1 {
+    font-size: 2.3rem;
+    font-family: 'Cormorant Unicase';
+}
+
+#logo h1 i {
+    font-size: 2.8rem;
+}
+
+#search {
+    width: 450px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+#search input {
+    width: 400px;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+
+#search button {
+    background-color: #ddd2d2;
+    color: #e6897e;
+    font-size: 1.5rem;
+    width: 50px;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+
+#login {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 15%;
+}
+
+#login i.fa-shopping-bag {
+    margin-right: 4rem;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+#login h3 {
+    color: white;
+    font-size: 1.3rem;
+}
+
+#login h3 i {
+    margin-right: 8px;
+    font-size: 1.5rem;
+}
+
+#login a {
+    position: relative;
+}
+
+#cart-len {
+    position: absolute;
+    top: -8px;
+    left: 12px;
+    background-color: crimson;
+    font-size: .85em;
+    color: white;
+    opacity: 0.8;
+    overflow: hidden;
+    height: 25px;
+    display: flex;
+    font-weight: bold;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    border-radius: 50%;
+}
+
+
+/* Header */
+
+.main {
+    width: 80%;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.main header {
+    background-color: aliceblue;
+    border-radius: 10px;
+    height: 150px;
+    padding: 20px;
+}
+
+.main header h1 {
+    font-weight: 500;
+    font-size: 1.7rem;
+}
+
+
+/* Filter */
+
+.main .filter {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.main .filter ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.filter ul li {
+    padding: 5px 18px;
+    border: 1px solid #da847d;
+    border-radius: 20px;
+    margin: 10px 10px 10px 0;
+    transition: 0.3s;
+}
+
+.filter ul li a {
+    color: #da847d;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.filter ul li:hover,
+.filter ul li.active {
+    background-color: #da847d;
+    color: white;
+}
+
+.filter ul li:hover a,
+.filter ul li.active a {
+    color: #fff;
+}
+
+
+/* card-layout */
+
+#card-section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+}
+
+#card-section .card-layout {
+    width: 230px;
+    margin: 10px 14px 10px 20px;
+    text-align: left;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid grey;
+    transition: 0.5s;
+}
+
+#card-section .card-layout .product-image {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+#card-section .card-layout img {
+    height: 200px;
+}
+
+#card-section .card-layout h4 {
+    height: 60px;
+    font-size: 1rem;
+    padding: 0 10px;
+    color: #1e2e5e;
+    font-weight: 500;
+    overflow: hidden;
+}
+
+#card-section .card-layout h5 {
+    z-index: 2;
+    position: absolute;
+    top: 5%;
+    left: -0.7%;
+    padding: 5px;
+    background-color: lightblue;
+    border-radius: 5px;
+    color: #1e2e5e;
+    font-size: 1rem;
+}
+
+#card-section .card-layout h3 {
+    color: teal;
+    font-size: 1.25rem;
+    padding-left: 10px;
+    font-weight: 700;
+    margin-top: -7px;
+}
+
+#card-section .card-layout h3 del {
+    font-size: 0.9rem;
+    color: #2b4181;
+    margin-left: 5px;
+    font-weight: 200;
+}
+
+#card-section .card-layout button {
+    width: 95%;
+    margin: -1px 0 8px 5px;
+    padding: 7px 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #da847d;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#card-section .card-layout:hover {
+    box-shadow: 1px 1px 3px 2px rgb(165, 164, 164);
+}
