@@ -1115,6 +1115,10 @@ footer .bottom {
     header .fas {
         top: 30%;
         transform: translateY(-30%);
+        font-size: 1.5rem;
+        width: 30px;
+        height: 30px;
+        padding: 3px 12px 10px 5px;
     }
     #features {
         margin-top: -40%;
@@ -1189,10 +1193,6 @@ footer .bottom {
     header .fas {
         top: 20%;
         transform: translateY(-20%);
-        font-size: 1.5rem;
-        width: 30px;
-        height: 30px;
-        padding: 3px 12px 10px 5px;
     }
     #features {
         display: none;
