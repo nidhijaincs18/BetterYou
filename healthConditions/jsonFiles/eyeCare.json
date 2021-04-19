@@ -1,8 +1,8 @@
 [{
         "productName": "0.5% Eye Drops 10 Ml",
         "company": "Refresh Tears",
-        "price": "Rs.121.20",
-        "actualPrice": "Rs.142.59",
+        "price": "Rs.121",
+        "actualPrice": "Rs.142",
         "discount": "15% off",
         "productImage": "https://cdn.medlife.com/productImages/REFREEN04A/2967-1.jpg?id=2021-04-17T20:40:59.245000+00:00"
     },
@@ -10,15 +10,15 @@
     {
         "productName": "Eye Drops 10 Ml",
         "company": "Refresh Liquigel",
-        "price": "Rs.168.10",
-        "actualPrice": "Rs.197.76",
+        "price": "Rs.168",
+        "actualPrice": "Rs.197",
         "discount": "15% off",
         "productImage": "https://cdn.medlife.com/productImages/REFREEN03A/2981-1.jpg?id=2021-04-17T20:41:24.718000+00:00"
     },
     {
         "productName": "0.3% Eye Drops 10 Ml",
         "company": "Genteal",
-        "price": "Rs.154.70",
+        "price": "Rs.154",
         "actualPrice": "Rs.182",
         "discount": "15% off",
         "productImage": "https://cdn.medlife.com/productImages/GENTEEN01A/GENTEEN01A.jpg?id=2021-04-17T20:41:24.339000+00:00"
@@ -26,39 +26,39 @@
     {
         "productName": "0.5% Eye Drops 10 Ml",
         "company": "Optive",
-        "price": "Rs.121.20",
-        "actualPrice": "Rs.142.59",
+        "price": "Rs.121",
+        "actualPrice": "Rs.142",
         "discount": "15% off",
         "productImage": "https://cdn.medlife.com/productImages/OPTIVEN01A/2984-1.jpg?id=2021-04-17T20:41:45.677000+00:00"
     },
     {
         "productName": "0.5% Eye Drops 10 Ml",
         "company": "Lubrex",
-        "price": "Rs.95.97",
-        "actualPrice": "Rs.112.90",
+        "price": "Rs.95",
+        "actualPrice": "Rs.112",
         "discount": "15% off",
         "productImage": "https://cdn.medlife.com/productImages/LUBREEN01A/19598-1.jpg?id=2021-04-17T20:41:56.179000+00:00"
     },
     {
         "productName": "0.5% Eye Drops 10 Ml",
         "company": "Just Tears",
-        "price": "Rs.82.12",
-        "actualPrice": "Rs.96.61",
+        "price": "Rs.82",
+        "actualPrice": "Rs.96",
         "discount": "15% off",
         "productImage": "https://cdn.medlife.com/productImages/JUSTTEN01A/25886-1.jpg?id=2021-04-17T20:42:16.065000+00:00"
     },
     {
         "productName": "0.5% Eye Drops 10 Ml",
         "company": "Teardrops",
-        "price": "Rs.121.18",
-        "actualPrice": "Rs.142.56",
+        "price": "Rs.121",
+        "actualPrice": "Rs.142",
         "discount": "15% off",
         "productImage": "https://cdn.medlife.com/productImages/TEARDEN01A/25260-1.jpg?id=2021-04-17T20:42:31.610000+00:00"
     },
     {
         "productName": "0.3 Percent Drops 10 Ml",
         "company": "Eyemist Forte",
-        "price": "Rs.197.20",
+        "price": "Rs.197",
         "actualPrice": "Rs.232",
         "discount": "15% off",
         "productImage": "https://cdn.medlife.com/productImages/EYEMIEN03A/46471-1.jpg?id=2021-04-17T20:43:21.809000+00:00"
@@ -66,15 +66,15 @@
     {
         "productName": "1% Eye Drops 10 Ml",
         "company": "Flogel",
-        "price": "Rs.130.81",
-        "actualPrice": "Rs.153.89",
+        "price": "Rs.130",
+        "actualPrice": "Rs.153",
         "discount": "15% off",
         "productImage": "https://cdn.medlife.com/productImages/FLOGEEN02A/47434-1.jpg?id=2021-04-17T20:43:06.783000+00:00"
     },
     {
         "productName": "0.03 Percent Drops 10 Ml",
         "company": "Tears Naturale Ii",
-        "price": "Rs.166.60",
+        "price": "Rs.166",
         "actualPrice": "Rs.196",
         "discount": "15% off",
         "productImage": "https://cdn.medlife.com/productImages/TEARSEN03A/2006-1.jpg?id=2021-04-17T20:43:59.917000+00:00"
@@ -82,7 +82,7 @@
     {
         "productName": "0.5% Eye Drops 10 Ml",
         "company": "Add Tears",
-        "price": "Rs.101.34",
+        "price": "Rs.101",
         "actualPrice": "Rs.119.22",
         "discount": "15% off",
         "productImage": "https://cdn.medlife.com/productImages/ADDTEEN01A/33061-1.jpg?id=2021-04-17T20:44:17.835000+00:00"
@@ -90,8 +90,8 @@
     {
         "productName": "0.5% Eye Drops 10 Ml",
         "company": "Softdrops",
-        "price": "Rs.155.13",
-        "actualPrice": "Rs.182.50",
+        "price": "Rs.155",
+        "actualPrice": "Rs.182",
         "discount": "15% off",
         "productImage": "https://cdn.medlife.com/productImages/SOFTDEB01A/1471-1.jpg?id=2021-04-17T20:43:20.388000+00:00"
     },
@@ -106,31 +106,31 @@
     {
         "productName": "1% Eye Drops 10 Ml",
         "company": "Lubrex Ds",
-        "price": "Rs.168.12",
-        "actualPrice": "Rs.197.79",
+        "price": "Rs.168",
+        "actualPrice": "Rs.197",
         "discount": "15% off",
         "productImage": "https://cdn.medlife.com/productImages/LUBREEN02A/19759-1.jpg?id=2021-04-17T20:44:18.523000+00:00"
     },
     {
         "productName": "0.5% Eye Drops 10 Ml",
         "company": "Extralube",
-        "price": "Rs.121.29",
-        "actualPrice": "Rs.142.69",
+        "price": "Rs.121",
+        "actualPrice": "Rs.142",
         "discount": "15% off",
         "productImage": "https://cdn.medlife.com/productImages/EXTRAEN01A/19848-1.jpg?id=2021-04-17T20:46:20.761000+00:00"
     },
     {
         "productName": "0.5% Eye Drops 10 Ml",
         "company": "Osmodrops",
-        "price": "Rs.192.89",
-        "actualPrice": "Rs.226.93",
+        "price": "Rs.192",
+        "actualPrice": "Rs.226",
         "discount": "15% off",
         "productImage": "https://cdn.medlife.com/productImages/OSMODEN01A/6769-1.jpg?id=2021-04-17T20:45:50.137000+00:00"
     },
     {
         "productName": "Multi Purpose Solution 500 Ml",
         "company": "Renu",
-        "price": "Rs.383.50",
+        "price": "Rs.383",
         "actualPrice": "Rs.590",
         "discount": "35% off",
         "productImage": "https://cdn.medlife.com/productImages/RENUMSB06A/RENUMSB06A.jpg?id=2021-04-17T20:41:30.016000+00:00"
@@ -138,31 +138,31 @@
     {
         "productName": "0.5% Eye Drops 10 Ml",
         "company": "Veldrop",
-        "price": "Rs.140.38",
-        "actualPrice": "Rs.165.15",
+        "price": "Rs.140",
+        "actualPrice": "Rs.165",
         "discount": "15% off",
         "productImage": "https://cdn.medlife.com/productImages/VELDREN01A/210654-1.jpg?id=2021-04-17T20:44:09.601000+00:00"
     },
     {
         "productName": "0.5% Eye Drops 10 Ml",
         "company": "Lacrimos",
-        "price": "Rs.75.44",
-        "actualPrice": "Rs.88.75",
+        "price": "Rs.75",
+        "actualPrice": "Rs.88",
         "discount": "15% off",
         "productImage": "https://cdn.medlife.com/productImages/LACRIEN01A/17036-1.jpg?id=2021-04-17T20:45:56.235000+00:00"
     },
     {
         "productName": "0.5% Eye Drops 10 Ml",
         "company": "Aqualube",
-        "price": "Rs.118.53",
-        "actualPrice": "Rs.139.45",
+        "price": "Rs.118",
+        "actualPrice": "Rs.139",
         "discount": "15% off",
         "productImage": "https://cdn.medlife.com/rnicon/3-easy-steps-toorder-03%403x.png?id=2021-04-17T20:45:54.913000+00:00"
     },
     {
         "productName": "0.5 Percentage Eye Drops 10 Ml",
         "company": "Lifezen Eyespa Relaxing",
-        "price": "Rs.88.40",
+        "price": "Rs.88",
         "actualPrice": "Rs.104",
         "discount": "15% off",
         "productImage": "https://cdn.medlife.com/productImages/EYESPEB01A/16504-1.jpg?id=2021-04-17T20:51:38.594000+00:00"
@@ -170,7 +170,7 @@
     {
         "productName": "Bio Sea Weed Revitalizing Anti Fatigue Eye Gel 15 Gm",
         "company": "Biotique",
-        "price": "Rs.159.20",
+        "price": "Rs.159",
         "actualPrice": "Rs.199",
         "discount": "20% off",
         "productImage": "https://cdn.medlife.com/productImages/BIOTIGB02A/BIOTIGB02A.jpg?id=2021-04-17T20:48:49.063000+00:00"
@@ -178,7 +178,7 @@
     {
         "productName": "0.3% Eye Drops 10 Ml",
         "company": "C Nac",
-        "price": "Rs.191.25",
+        "price": "Rs.191",
         "actualPrice": "Rs.225",
         "discount": "15% off",
         "productImage": "https://cdn.medlife.com/productImages/CNACZEN01A/13875-1.jpg?id=2021-04-17T20:48:47.351000+00:00"
@@ -186,23 +186,23 @@
     {
         "productName": "1 Percentage Eye Drops 10 Ml",
         "company": "Ultra Gel",
-        "price": "Rs.111.80",
-        "actualPrice": "Rs.131.53",
+        "price": "Rs.111",
+        "actualPrice": "Rs.131",
         "discount": "15% off",
         "productImage": "https://cdn.medlife.com/productImages/ULTRAEB01A/25893-1.jpg?id=2021-04-17T20:50:29.269000+00:00"
     },
     {
         "productName": "0.5% Indoco Remedies Ltd 10 Ml",
         "company": "Irivisc",
-        "price": "Rs.98.82",
-        "actualPrice": "Rs.116.26",
+        "price": "Rs.98",
+        "actualPrice": "Rs.116",
         "discount": "15% off",
         "productImage": "https://cdn.medlife.com/productImages/IRIVIEN01A/13300-1.jpg?id=2021-04-17T20:48:47.774000+00:00"
     },
     {
         "productName": "1 Percent Eye Drops 15 Ml",
         "company": "Eco Tears",
-        "price": "Rs.72.25",
+        "price": "Rs.72",
         "actualPrice": "Rs.85",
         "discount": "15% off",
         "productImage": "https://cdn.medlife.com/rnicon/3-easy-steps-toorder-03%403x.png?id=2021-04-17T20:45:30.302000+00:00"
@@ -210,7 +210,7 @@
     {
         "productName": "Multi Purpose Solution 120 Ml",
         "company": "Renu",
-        "price": "Rs.229.50",
+        "price": "Rs.229",
         "actualPrice": "Rs.270",
         "discount": "15% off",
         "productImage": "https://cdn.medlife.com/productImages/RENUMSB05A/RENU.jpg?id=2021-04-17T20:43:13.979000+00:00"
@@ -218,24 +218,24 @@
     {
         "productName": "0.5 Percentage Drops 10 Ml",
         "company": "Everfresh Tears",
-        "price": "Rs.111.53",
-        "actualPrice": "Rs.139.41",
+        "price": "Rs.111",
+        "actualPrice": "Rs.139",
         "discount": "20% off",
         "productImage": "https://cdn.medlife.com/rnicon/3-easy-steps-toorder-03%403x.png?id=2021-04-17T20:50:07.904000+00:00"
     },
     {
         "productName": "0.5% Eye Drops 10 Ml",
         "company": "Zyaqua",
-        "price": "Rs.116.70",
-        "actualPrice": "Rs.137.29",
+        "price": "Rs.116",
+        "actualPrice": "Rs.137",
         "discount": "15% off",
         "productImage": "https://cdn.medlife.com/productImages/ZYAQUEN01A/30836-1.jpg?id=2021-04-17T20:47:14.174000+00:00"
     },
     {
         "productName": "0.5% Eye Drops 10 Ml",
         "company": "Glytears",
-        "price": "Rs.121.18",
-        "actualPrice": "Rs.142.56",
+        "price": "Rs.121",
+        "actualPrice": "Rs.142",
         "discount": "15% off",
         "productImage": "https://cdn.medlife.com/productImages/GLYTEEN01A/25440-1.jpg?id=2021-04-17T20:48:19.028000+00:00"
     }
