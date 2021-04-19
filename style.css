@@ -1187,9 +1187,12 @@ footer .bottom {
         font-size: 1.5rem;
     }
     header .fas {
-        font-size: 1.5rem;
         top: 20%;
         transform: translateY(-20%);
+        font-size: 1.5rem;
+        width: 30px;
+        height: 30px;
+        padding: 3px 12px 10px 5px;
     }
     #features {
         display: none;
