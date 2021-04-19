@@ -1,15 +1,15 @@
 [{
         "productName": "Acidity & Gas Relief Mint 15 Tablet",
         "company": "Digene",
-        "price": "Rs.14.88",
-        "actualPrice": "Rs.18.15",
+        "price": "Rs.14",
+        "actualPrice": "Rs.18",
         "discount": "18% off",
         "productImage": "https://cdn.medlife.com/productImages/DIGENTN02A/Image 1-Mint Tab-FOP.jpeg?id=2021-04-17T20:41:09.150000+00:00"
     },
     {
         "productName": "Triphala 30 Tablets",
         "company": "Zandu",
-        "price": "Rs.32.20",
+        "price": "Rs.32",
         "actualPrice": "Rs.35",
         "discount": "8% off",
         "productImage": "https://cdn.medlife.com/productImages/ZANDUTB08A/ZANDUTB08A.jpeg?id=2021-04-17T20:43:03.799000+00:00"
@@ -17,7 +17,7 @@
     {
         "productName": "Orange Flavour Sachet 5 Gm",
         "company": "Eno",
-        "price": "Rs.8.55",
+        "price": "Rs.8",
         "actualPrice": "Rs.9",
         "discount": "5% off",
         "productImage": "https://cdn.medlife.com/productImages/ENOORPN02A/51wID8K3r1L.jpg?id=2021-04-17T20:41:12.850000+00:00"
@@ -25,7 +25,7 @@
     {
         "productName": "Lemon Flavour Sachet 6*5 Gm",
         "company": "Eno",
-        "price": "Rs.8.10",
+        "price": "Rs.8",
         "actualPrice": "Rs.9",
         "discount": "10% off",
         "productImage": "https://cdn.medlife.com/productImages/ENOLESS01A/ENOLESS01A.jpg?id=2021-04-17T20:42:17.486000+00:00"
@@ -33,7 +33,7 @@
     {
         "productName": "Lemon Flavour Sachet 5 Gm",
         "company": "Eno",
-        "price": "Rs.6.40",
+        "price": "Rs.6",
         "actualPrice": "Rs.8",
         "discount": "20% off",
         "productImage": "https://cdn.medlife.com/productImages/ENOLEPB01A/ENOLEPB01A.jpg?id=2021-04-17T20:40:57.113000+00:00"
@@ -41,7 +41,7 @@
     {
         "productName": "Cola Flavour Sachet 5 Gm",
         "company": "Eno",
-        "price": "Rs.7.20",
+        "price": "Rs.7",
         "actualPrice": "Rs.8",
         "discount": "10% off",
         "productImage": "https://cdn.medlife.com/productImages/ENOFRPS01A/ENOFRPS01A.jpg?id=2021-04-17T20:41:10.774000+00:00"
@@ -49,7 +49,7 @@
     {
         "productName": "Pilex 60 Tablets",
         "company": "Himalaya",
-        "price": "Rs.121.50",
+        "price": "Rs.121",
         "actualPrice": "Rs.135",
         "discount": "10% off",
         "productImage": "https://cdn.medlife.com/productImages/PILEXTN01A/PILEXTN01A-1.jpg?id=2021-04-17T20:41:06.702000+00:00"
@@ -57,7 +57,7 @@
     {
         "productName": "Gasex 100 Tablets",
         "company": "Himalaya",
-        "price": "Rs.110.50",
+        "price": "Rs.110",
         "actualPrice": "Rs.130",
         "discount": "15% off",
         "productImage": "https://cdn.medlife.com/productImages/GASEXTB01A/GASEXTB01A-1.jpg?id=2021-04-17T20:41:03.373000+00:00"
@@ -65,7 +65,7 @@
     {
         "productName": "Churna Powder 100 Gm",
         "company": "Kayam",
-        "price": "Rs.83.70",
+        "price": "Rs.83",
         "actualPrice": "Rs.90",
         "discount": "7% off",
         "productImage": "https://cdn.medlife.com/productImages/KAYAMPB01A/51791-1.jpg?id=2021-04-17T20:41:25.749000+00:00"
@@ -73,8 +73,8 @@
     {
         "productName": "Mint Sugar Free Gel 450 Ml",
         "company": "Digene",
-        "price": "Rs.156.05",
-        "actualPrice": "Rs.190.30",
+        "price": "Rs.156",
+        "actualPrice": "Rs.190",
         "discount": "18% off",
         "productImage": "https://cdn.medlife.com/productImages/DIGENSN01A/Image 1--Mint 450ml FOP.jpeg?id=2021-04-17T20:41:22.168000+00:00"
     },
@@ -89,7 +89,7 @@
     {
         "productName": "Mausambi Powder 5 Gm",
         "company": "Eno",
-        "price": "Rs.7.20",
+        "price": "Rs.7",
         "actualPrice": "Rs.8",
         "discount": "10% off",
         "productImage": "https://cdn.medlife.com/productImages/ENOMAPS01A/ENOMAPS01A.jpg?id=2021-04-17T20:41:36.950000+00:00"
@@ -105,15 +105,15 @@
     {
         "productName": "Rtd Mango Ors Tetrapack 200 Ml",
         "company": "Electral",
-        "price": "Rs.20.93",
-        "actualPrice": "Rs.24.62",
+        "price": "Rs.20",
+        "actualPrice": "Rs.24",
         "discount": "15% off",
         "productImage": "https://cdn.medlife.com/productImages/ELECTTN03A/67656-1.jpg?id=2021-04-17T20:44:56.909000+00:00"
     },
     {
         "productName": "Pancharishta Tonic 450 Ml",
         "company": "Zandu",
-        "price": "Rs.129.36",
+        "price": "Rs.129",
         "actualPrice": "Rs.132",
         "discount": "2% off",
         "productImage": "https://cdn.medlife.com/productImages/ZANDUSB01A/ZANDUSB01A-1.jpg?id=2021-04-17T20:41:00.857000+00:00"
@@ -121,7 +121,7 @@
     {
         "productName": "Triphala Bowel Wellness 60 Tablets",
         "company": "Himalaya",
-        "price": "Rs.127.50",
+        "price": "Rs.127",
         "actualPrice": "Rs.150",
         "discount": "15% off",
         "productImage": "https://cdn.medlife.com/productImages/TRIPHCN02A/175711-1.jpg?id=2021-04-17T20:41:23.653000+00:00"
@@ -129,15 +129,15 @@
     {
         "productName": "Peppermint Liquid 150 Ml",
         "company": "Gaviscon",
-        "price": "Rs.127.49",
-        "actualPrice": "Rs.134.20",
+        "price": "Rs.127",
+        "actualPrice": "Rs.134",
         "discount": "5% off",
         "productImage": "https://cdn.medlife.com/productImages/GAVISLN01A/1.jpg?id=2021-04-17T20:41:25.577000+00:00"
     },
     {
         "productName": "Goodcare Karela Jamun Juice 1000 Ml",
         "company": "Baidyanath",
-        "price": "Rs.250.75",
+        "price": "Rs.250",
         "actualPrice": "Rs.295",
         "discount": "15% off",
         "productImage": "https://cdn.medlife.com/productImages/BAIDYLS01A/BAIDYLS01A-1.jpg?id=2021-04-17T20:42:15.871000+00:00"
@@ -145,7 +145,7 @@
     {
         "productName": "Goodcare Triphala Juice 1000 Ml",
         "company": "Baidyanath",
-        "price": "Rs.192.50",
+        "price": "Rs.192",
         "actualPrice": "Rs.250",
         "discount": "23% off",
         "productImage": "https://cdn.medlife.com/productImages/BAIDYLB04B/BAIDYLB04B.jpg?id=2021-04-17T20:42:13.391000+00:00"
@@ -169,7 +169,7 @@
     {
         "productName": "30 Tablets",
         "company": "Kayam",
-        "price": "Rs.85.14",
+        "price": "Rs.85",
         "actualPrice": "Rs.99",
         "discount": "14% off",
         "productImage": "https://cdn.medlife.com/productImages/KAYAMTB01A/170753-1.jpg?id=2021-04-17T20:41:18.534000+00:00"
@@ -177,7 +177,7 @@
     {
         "productName": "Probiotic 25 Billion Cfu's 60 Capsules",
         "company": "Liveasy Wellness",
-        "price": "Rs.1,234.05",
+        "price": "Rs.1,234",
         "actualPrice": "Rs.1,299",
         "discount": "5% off",
         "productImage": "https://cdn.medlife.com/productImages/LIVEATS01A/IMG_0674_1500x1500.jpg?id=2021-04-17T20:48:27.878000+00:00"
@@ -185,7 +185,7 @@
     {
         "productName": "Pancharishta Tonic 650 Ml",
         "company": "Zandu",
-        "price": "Rs.177.65",
+        "price": "Rs.177",
         "actualPrice": "Rs.187",
         "discount": "5% off",
         "productImage": "https://cdn.medlife.com/productImages/ZANDUSB04A/ZANDUSB04A.jpg?id=2021-04-17T20:42:26.406000+00:00"
@@ -193,7 +193,7 @@
     {
         "productName": "Psyllium Husk Powder 100 Gm",
         "company": "Sat Isabgol",
-        "price": "Rs.97.65",
+        "price": "Rs.97",
         "actualPrice": "Rs.105",
         "discount": "7% off",
         "productImage": "https://cdn.medlife.com/productImages/SATISPN02A/SATISPN02A.jpg?id=2021-04-17T20:41:31.907000+00:00"
@@ -201,7 +201,7 @@
     {
         "productName": "Triphala Juice 1 Ltr",
         "company": "Kapiva Ayurveda",
-        "price": "Rs.229.60",
+        "price": "Rs.229",
         "actualPrice": "Rs.280",
         "discount": "18% off",
         "productImage": "https://cdn.medlife.com/productImages/KAPIVLB19A/image_1.jpg?id=2021-04-17T20:46:19.626000+00:00"
@@ -209,7 +209,7 @@
     {
         "productName": "Naturecare Isabgol Powder 375 Gm",
         "company": "Dabur",
-        "price": "Rs.202.50",
+        "price": "Rs.202",
         "actualPrice": "Rs.225",
         "discount": "10% off",
         "productImage": "https://cdn.medlife.com/productImages/DABURPJ01A/DABURPJ01A.jpg?id=2021-04-17T20:42:11.553000+00:00"
@@ -241,7 +241,7 @@
     {
         "productName": "Apple Cider Vinegar 500mg 60 Tablets",
         "company": "Liveasy Wellness",
-        "price": "Rs.569.05",
+        "price": "Rs.569",
         "actualPrice": "Rs.599",
         "discount": "5% off",
         "productImage": "https://cdn.medlife.com/productImages/LIVEATB01A/ACV_Front.jpg?id=2021-04-17T20:45:47.330000+00:00"
@@ -257,7 +257,7 @@
     {
         "productName": "Cooling Mint (6 X 5 Gm) Sachet 1 Unit",
         "company": "Eno",
-        "price": "Rs.40.80",
+        "price": "Rs.40",
         "actualPrice": "Rs.48",
         "discount": "15% off",
         "productImage": "https://cdn.medlife.com/productImages/ENOCOPS03A/ENOCOPS03A.jpg?id=2021-04-17T20:42:37.742000+00:00"
@@ -265,7 +265,7 @@
     {
         "productName": "Pancharishta Tonic 650 Ml",
         "company": "Zandu",
-        "price": "Rs.177.65",
+        "price": "Rs.177",
         "actualPrice": "Rs.187",
         "discount": "5% off",
         "productImage": "https://cdn.medlife.com/productImages/ZANDUSB09A/ZANDUSB09A-1.jpg?id=2021-04-17T20:42:31.890000+00:00"

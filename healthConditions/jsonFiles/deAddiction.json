@@ -1,21 +1,21 @@
 [{
         "productName": "2BACONIL 2 mg Chew Gum - Icy Mint 50's",
-        "price": "Rs. 300.00",
+        "price": "Rs. 300",
         "productImage": "https://www.netmeds.com/images/product-v1/150x150/892045/2baconil_2_mg_chew_gum_icy_mint_50_s_0.jpg"
     },
     {
         "productName": "Adven D-Tox Drops 30 ml",
-        "price": "Rs. 125.00",
+        "price": "Rs. 125",
         "productImage": "https://www.netmeds.com/images/product-v1/150x150/830862/adven_d_tox_drops_30_ml_0.jpg"
     },
     {
         "productName": "Dr.Willmar Schwabe Lobelia Inflata Q Liquid 30 ml",
-        "price": "Rs. 115.00",
+        "price": "Rs. 115",
         "productImage": "https://www.netmeds.com/images/product-v1/150x150/856346/dr_willmar_schwabe_lobelia_inflata_q_liquid_30_ml_0.jpg"
     },
     {
         "productName": "Adel Lobelia Inf. 10M Liquid 10 ml",
-        "price": "Rs. 200.00",
+        "price": "Rs. 200",
         "productImage": "https://www.netmeds.com/images/product-v1/150x150/847767/adel_lobelia_inf_10m_liquid_10_ml_0_0.jpg"
     }
 ]
