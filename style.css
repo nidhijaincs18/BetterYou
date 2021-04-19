@@ -74,7 +74,7 @@ footer .upper-part .logo i {
 
 #login {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     width: 15%;
 }
@@ -86,7 +86,11 @@ footer .upper-part .logo i {
 }
 
 #login h3 {
+    width: 100px;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #login h3 i {
@@ -946,7 +950,7 @@ footer .bottom {
     #login {
         margin-top: -15%;
         justify-content: center;
-        width: 30%;
+        width: 20%;
         float: right;
     }
     #login i.fa-shopping-bag {
@@ -1024,7 +1028,7 @@ footer .bottom {
     #login {
         margin-top: 25px;
         justify-content: space-between;
-        width: 35%;
+        width: 30%;
     }
     #features {
         margin-top: -20%;
@@ -1102,9 +1106,7 @@ footer .bottom {
     }
     #login i.fa-shopping-bag {
         font-size: 1.5rem;
-    }
-    #login h3 i {
-        font-size: 1.5rem;
+        margin-right: 1rem;
     }
     .carousel .slide .content h1 {
         margin-bottom: 15px;
@@ -1174,8 +1176,8 @@ footer .bottom {
         font-size: 2.3rem;
     }
     #login {
-        width: 45%;
-        margin-top: 2%;
+        width: 40%;
+        margin-top: 5%;
     }
     header {
         margin-top: 70px;
@@ -1193,7 +1195,7 @@ footer .bottom {
         display: none;
     }
     .offers {
-        margin-top: -60%;
+        margin-top: -50%;
     }
     footer .upper-part .logo {
         margin: 25px 0px 20px 10px;
