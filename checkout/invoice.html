@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Better You</title>
+    <link rel="icon" href="../images/med-logo.png">
+    <link rel="stylesheet" href="invoice.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="logo">
+        <h1>Better<i class="fas fa-stethoscope"></i></h1>
+    </div>
+    <div class="main">
+        <h1>Your Order Is Confirmed!</h1>
+        <div class="name inside-box">
+            <p>Hello! <span id="name"></span></p>
+            <small class="text-muted">your order has been confirmed and will be shipped in 2-3 working days</small>
+        </div>
+        <div class="order-details inside-box">
+            <ul style="padding-left: 0;">
+
+                <li class="text-muted">Order Date <br><span id="date" class="text-dark"></span></li>
+                <li class="text-muted">Order Number: <br><span id="orderNo" class="text-dark">ABC1234567</span> </li>
+                <li class="text-muted">Payment Method: <br><span id="payment" class="text-dark">Debit Card <i class="fas fa-credit-card"></i></span></li>
+                <li class="text-muted">Shipping Address: <br><span id="location"></span></li>
+            </ul>
+        </div>
+        <table class="table table-sm table-borderless w-lg-50 w-md-100 my-5">
+
+            <tbody>
+                <tr style=" border-top: hidden;">
+                    <td>Subtotal</td>
+                    <td id="price" class="amount">0</td>
+                </tr>
+                <tr style=" border-top: hidden;">
+                    <td>Shipping Fee</td>
+                    <td id="shipping" class="amount">Rs. 45</td>
+                </tr>
+                <tr style=" border-top: hidden;">
+                    <td>Tax</td>
+                    <td id="tax" class="amount">Rs.30</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td id="total" class="amount">0</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="foot">
+            <div class="expected">
+                <p>Expected Delivery Date</p>
+                <h3></h3>
+                <small class="text-muted">We will be sending a shipping confirmation email when the item is shipped!</small>
+            </div>
+            <div class="thank">
+                <p>Thank You For Shopping </p>
+                <div> Better You Team</div>
+                <span>Call - 1234567890</span>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="invoice.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+</body>
+
+</html>

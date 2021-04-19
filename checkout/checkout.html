@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="icon" href="images/med-logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Better You</title>
+    <style>
+        a:hover {
+            text-decoration: none;
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <main style="background-color: aliceblue;" class="pt-1 pb-5">
+        <div class="container  fadeIn mb-10">
+            <h2 style="color: #1e2e5e;" class="my-4 h2 text-center">Checkout / Payment</h2>
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <form class="card-body" action="">
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <div class="md-form ">
+                                        <label for="firstName" class="">First name</label>
+                                        <input type="text" id="firstName" class="form-control" required>
+                                        <div class="invalid-feedback">
+                                            Please enter your Name.
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <div class="md-form">
+                                        <label for="lastName" class="">Last name</label>
+                                        <input type="text" id="lastName" class="form-control" required>
+                                        <div class="invalid-feedback">
+                                            Please enter your Full Name.
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="md-form mb-4">
+                                <label for="email" class="">Email (optional)</label>
+                                <input type="text" id="email" class="form-control" placeholder="xyz@example.com">
+                            </div>
+                            <div class="md-form mb-4">
+                                <label for="address" class="">Address</label>
+                                <input type="text" id="address" class="form-control" placeholder="House Number, Main Street, Colony" required>
+                                <small class="text-muted">Enter your Complete Address</small>
+                                <div class="invalid-feedback">
+                                    Please enter your Address.
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4 col-md-12 mb-4">
+
+                                    <label for="country">Country</label>
+                                    <select class="custom-select d-block w-100" id="country" required>
+                                        <option value="">Choose...</option>
+                                        <option value="India">India</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please select a valid country.
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-4">
+
+                                    <label for="state">State</label>
+                                    <select class="custom-select d-block w-100" id="state" required>
+                                        <option value="">Choose...</option>
+                                        <option>Delhi</option>
+                                        <option>Haryana</option>
+                                        <option>Uttar Pradesh</option>
+                                        <option>Punjab</option>
+                                        <option>Maharashtra</option>
+                                        <option>Rajasthan</option>
+                                        <option>Goa</option>
+                                        <option>Jammu Kashmir</option>
+                                        <option>Madhya Pradesh</option>
+                                        <option>Kerla</option>
+                                        <option>Assam</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid state.
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-4">
+
+                                    <label for="pin">PinCode</label>
+                                    <input type="text" class="form-control" id="pin" placeholder="" required>
+                                    <div class="invalid-feedback">
+                                        Pin code .
+                                    </div>
+
+                                </div>
+                            </div>
+                            <hr>
+
+                            <div class="d-block my-3">
+                                <div class="custom-control custom-radio">
+                                    <input id="credit" type="radio" class="custom-control-input" checked>
+                                    <label class="custom-control-label" for="credit">Credit card / Debit card</label>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="name">Name on card</label>
+                                    <input type="text" class="form-control" id="name" placeholder="" required>
+                                    <small class="text-muted">Full name as displayed on card</small>
+                                    <div class="invalid-feedback">
+                                        Name on card is
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="number">Credit/Debit card number</label>
+                                    <input type="text" class="form-control" maxlength="12" id="number" placeholder="" required>
+                                    <div class="invalid-feedback">
+                                        Credit card number is
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 mb-3">
+                                    <label for="expiration">Expiration</label>
+                                    <input type="text" class="form-control" id="expiration" placeholder="" required>
+                                    <div class="invalid-feedback">
+                                        Expiration date
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" class="form-control" maxlength="3" id="cvv" placeholder="" required>
+                                    <div class="invalid-feedback">
+                                        Security code
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="mb-4">
+
+                            <div class="mb-4" id="amount">Amount to be Paid: <span style="font-size: 1.4em; font-weight: 700; color: #1e2e5e;" class="rupees">Rs.</span></div>
+                            <a href="invoice.html"><button style="background-color: #da847d; border: none;" class="btn btn-primary btn-lg btn-block" id="bbtn">Confirm</button></a>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </main>
+
+
+    <script src="checkout.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+</body>
+
+</html>

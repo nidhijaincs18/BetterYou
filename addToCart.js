@@ -25,6 +25,7 @@ $("#cart-items").children('.item').each(function() {
 });
 console.log(price);
 $('#amount').text('Rs. ' + price);
+localStorage.setItem("FinalPrice", price);
 
 
 
@@ -37,6 +38,7 @@ $('body').on('change', function() {
     });
     console.log(price);
     $('#amount').text('Rs. ' + price);
+    localStorage.setItem("FinalPrice", price);
 
 });
 
@@ -54,7 +56,9 @@ $('body').on('click', '.delete', function() {
     console.log(cartList);
     localStorage.setItem("cartList", JSON.stringify(cartList));
     $(this).closest('.item').remove();
+    localStorage.setItem("FinalPrice", price);
 
 
 });
 localStorage.setItem("cartList", JSON.stringify(cartList));
+localStorage.setItem("FinalPrice", price);
