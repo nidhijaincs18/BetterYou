@@ -30,7 +30,7 @@
 
 
 $('body').on('click', '.add-to-cart ', function() {
-    var productName = $(this).closest('.card-layout ').find('.produt-name').text();
+    var productName = $(this).closest('.card-layout ').find('.product-name').text();
     var price = $(this).closest('.card-layout ').find('.price').text();
     var productImage = $(this).closest('.card-layout ').find('.product-image a img').attr("src");
 
@@ -43,10 +43,20 @@ $('body').on('click', '.add-to-cart ', function() {
 
     value = { "productImage": productImage, "productName": productName, "price": price }
 
+    var temp = false;
+    $(existing).each(function(key, value) {
+        if (value.productName == productName) {
+            temp = true;
+            return false;
+        }
+    });
     // Add new data to localStorage Array
-    existing.push(value);
-    console.log(value);
-    console.log(existing);
+    if (!temp) {
+        existing.push(value);
+        console.log(value);
+        console.log(existing);
+    }
+
 
     // Save back to localStorage
     localStorage.setItem('cartList', JSON.stringify(existing));

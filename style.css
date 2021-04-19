@@ -237,6 +237,7 @@ header .prev {
 
 header .next {
     right: 2%;
+    text-align: center;
 }
 
 header .fas:hover {
@@ -1010,7 +1011,7 @@ footer .bottom {
         margin: 30px 0 10px;
     }
     .introduction p {
-        font-size: 1.1rem;
+        font-size: 1rem;
         width: 85%;
         margin: 0 auto 15px;
     }
@@ -1156,12 +1157,13 @@ footer .bottom {
         height: 480px;
     }
     .introduction h1 {
-        margin: 20px 0 10px;
+        margin: 20px 0;
         font-size: 1.5rem;
+        padding: 0 10px;
     }
     .introduction p {
-        font-size: 1rem;
-        width: 95%;
+        font-size: .9rem;
+        width: 92%;
         margin: 0 auto 15px;
         text-align: justify;
     }

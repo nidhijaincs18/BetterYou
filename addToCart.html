@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="addToCart.css">
     <link rel="icon" href="images/med-logo.png">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
 
@@ -31,41 +32,22 @@
     <div id="cart-items">
         <h2>My Cart</h2>
 
-        <div class="item">
-            <div class="pinfo">
-                <img src="" alt="">
-                <div class="description">
-                    <h3 class="pname">Dabur Health Condtion Chawanprash Offer in 1234 in 200g </h3>
-                    <h3 class="cost">Rs.152</h3>
-                </div>
-            </div>
-            <div class="quantity">
-                <div class="qty">
-                    <label for="qty">QTY:</label>
-                    <select id="qty" name="qty">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
 
-                    </select>
-                </div>
-                <button><i class="far fa-trash-alt"></i>Remove</button>
-            </div>
-        </div>
-        <div class="payment">
-            <div class="amt-details">
-                <h3>PAYMENT DETAILS</h3>
-                <h4>Total Amount</h4>
-                <h3 id="amount">Rs.</h3>
-            </div>
-            <button id="proceed">Proceed</button>
-        </div>
+
     </div>
+    <div class="payment">
+        <div class="amt-details">
+            <h3>PAYMENT DETAILS</h3>
+            <h4>Total Amount</h4>
+            <h3 id="amount"></h3>
+        </div>
+        <button id="proceed">Proceed</button>
+    </div>
+
+
+    <script src="addToCart.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
 </body>
 
 </html>

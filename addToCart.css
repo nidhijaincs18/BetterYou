@@ -101,8 +101,8 @@ a {
     position: relative;
 }
 
-#cart-items h2 {
-    margin-left: 15px;
+h2 {
+    margin-left: 30px;
     font-weight: 600;
     color: #1e2e5e;
 }
@@ -118,19 +118,28 @@ a {
 }
 
 .item .pinfo {
-    width: 50%;
-    display: flex;
+    width: 80%;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     padding: 0 15px;
     overflow: hidden;
     position: relative;
 }
 
+.pinfo::before {
+    clear: both;
+}
+
 .item .pinfo img {
     width: 100px;
+    float: left;
     height: 110px;
     margin-right: 20px;
+}
+
+.description {
+    float: left;
 }
 
 .description h3 {
@@ -182,12 +191,12 @@ a {
 }
 
 .payment {
-    width: 45%;
+    width: 70%;
     background-color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 15px 0px 15px 25px;
+    margin: 15px auto;
     border-radius: 5px;
     padding: 10px;
 }
@@ -230,11 +239,11 @@ a {
 
 @media screen and (max-width:970px) {
     .item .pinfo {
-        width: 70%;
+        width: 80%;
     }
     .payment {
-        width: 55%;
-        margin: 15px 0px 15px 20px;
+        width: 80%;
+        margin: 15px auto;
     }
 }
 
@@ -255,7 +264,7 @@ a {
         width: 90%;
     }
     .payment {
-        width: 70%;
+        width: 85%;
     }
 }
 
