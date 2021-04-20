@@ -234,6 +234,44 @@ h2 {
     clear: both;
 }
 
+.empty-cart {
+    height: 100vh;
+    width: 100%;
+}
+
+.empty-cart div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.empty-cart img {
+    height: 250px;
+    width: 350px;
+}
+
+.empty-cart h3 {
+    color: #1e2e5e;
+    font-size: 1.6em;
+    margin-top: -40px;
+}
+
+.empty-cart button {
+    border: none;
+    outline: none;
+    font-size: 1.1em;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #e6897e;
+    color: #fff;
+    cursor: pointer;
+}
+
 
 /* Responsive */
 

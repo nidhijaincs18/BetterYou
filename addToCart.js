@@ -41,6 +41,15 @@ $('body').on('change', function() {
     localStorage.setItem("FinalPrice", price);
 
 });
+if (cartList.length == 0) {
+    $('.payment').css('display', 'none');
+    $('#cart-items').css('display', 'none');
+    $('.empty-cart').css('display', 'block');
+} else {
+    $('.payment').css('display', 'flex');
+    $('#cart-items').css('display', 'block');
+    $('.empty-cart').css('display', 'none');
+}
 
 $('body').on('click', '.delete', function() {
     var elementIndex = $(this).closest('.item').index();
@@ -59,6 +68,15 @@ $('body').on('click', '.delete', function() {
     localStorage.setItem("FinalPrice", price);
 
 
+    if (cartList.length == 0) {
+        $('.payment').css('display', 'none');
+        $('#cart-items').css('display', 'none');
+        $('.empty-cart').css('display', 'block');
+    } else {
+        $('.payment').css('display', 'flex');
+        $('#cart-items').css('display', 'block');
+        $('.empty-cart').css('display', 'none');
+    }
 });
 localStorage.setItem("cartList", JSON.stringify(cartList));
 localStorage.setItem("FinalPrice", price);
