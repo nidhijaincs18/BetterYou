@@ -35,7 +35,8 @@ for (let i = 0; i < indicator.length; i++) {
 $('body').on('click', '.add-to-cart ', function() {
     var productName = $(this).closest('.card-layout ').find('.produt-name').text();
     var price = $(this).closest('.card-layout ').find('.price').text();
-    var productImage = $(this).closest('.card-layout ').find('.product-image a img').attr("src");
+    var productImage = $(this).closest('.card-layout ').find('.product-image a img').attr("src").substring(3);
+    console.log(productImage)
 
 
     var existing = localStorage.getItem('cartList');
@@ -45,7 +46,7 @@ $('body').on('click', '.add-to-cart ', function() {
     existing = existing ? JSON.parse(existing) : [];
 
     // 
-    value = { "productImage": productImage.substring(3), "productName": productName, "price": price }
+    value = { "productImage": productImage, "productName": productName, "price": price }
 
     var temp = false;
     $(existing).each(function(key, value) {
