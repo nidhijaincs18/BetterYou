@@ -1,3 +1,12 @@
+//Responsive filter
+$(document).ready(function() {
+    $('.menu-toggle').click(function() {
+        $('.menu-toggle').toggleClass('active')
+        $('.filter').toggleClass('active')
+    })
+});
+
+// Filter
 let indicator = document.querySelector('.indicator').children;
 let cards = document.querySelector('.card-section').children;
 

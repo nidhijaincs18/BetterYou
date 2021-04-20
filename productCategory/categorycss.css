@@ -88,6 +88,10 @@ a {
 #login h3 {
     color: white;
     font-size: 1.3rem;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #login h3 i {
@@ -138,6 +142,7 @@ a {
 .main header h1 {
     font-weight: 500;
     font-size: 1.7rem;
+    color: #2b4181;
 }
 
 
@@ -263,4 +268,130 @@ a {
 
 .card-section .card-layout:hover {
     box-shadow: 1px 1px 3px 2px rgb(165, 164, 164);
+}
+
+@media screen and (max-width:1250px) {
+    .card-section .card-layout {
+        width: 28%;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .main {
+        width: 90%;
+    }
+    .card-section .card-layout {
+        width: 29.5%;
+        margin: 10px 14px 10px;
+    }
+}
+
+@media screen and (max-width:850px) {
+    #search {
+        width: 350px;
+    }
+    #search input {
+        width: 300px;
+    }
+    #login i.fa-shopping-bag {
+        margin-right: 2rem;
+    }
+    .card-section .card-layout {
+        width: 38%;
+        margin: 3% 5%;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .menu-toggle {
+        display: block;
+        width: 50px;
+        height: 50px;
+        float: right;
+        margin: 10px;
+        text-align: center;
+        cursor: pointer;
+        color: #da847d;
+        font-size: 32px;
+    }
+    .menu-toggle::before {
+        font-family: "Font Awesome 5 Pro";
+        content: '\f0c9';
+        line-height: 40px;
+        transition: 0.5s;
+    }
+    .menu-toggle.active::before {
+        content: '\f00d';
+    }
+    .filter {
+        display: none;
+    }
+    .filter.active {
+        display: block;
+        width: 92%;
+        background-color: #da847d;
+        border-radius: 5px;
+        padding: 10px 0;
+    }
+    .filter.active ul {
+        display: block;
+        text-align: center;
+    }
+    .filter.active li {
+        padding: 10px 0;
+        background-color: #fff;
+    }
+    .filter.active li a,
+    .filter.active ul li.active a {
+        color: #1e2e5e;
+    }
+    .filter.active ul li.active {
+        background-color: #fff;
+    }
+    .filter ul li:hover,
+    .filter.active ul li.active {
+        border: 1px solid #fff;
+        background-color: transparent;
+        box-shadow: -1px 1px 2px 1px white;
+    }
+    .filter ul li:hover a,
+    .filter.active ul li.active a {
+        color: #fff;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .navigation {
+        justify-content: space-between;
+    }
+    .navigation #logo {
+        margin-left: 5%;
+    }
+    #search {
+        display: none;
+    }
+    .navigation #login {
+        width: 30%;
+        margin-right: 5%;
+    }
+    .card-section .card-layout {
+        width: 42%;
+        margin: 3% 3% 3% 5%;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .menu-toggle {
+        margin: 10px 0px 10px 15px;
+    }
+    .filter.active {
+        width: 90%;
+    }
+    .main {
+        width: 95%;
+    }
+    .card-section .card-layout {
+        width: 90%;
+        margin: 2%;
+    }
 }

@@ -98,6 +98,10 @@ footer .upper-part .logo i {
     font-size: 1.5rem;
 }
 
+#login a {
+    position: relative;
+}
+
 #nav-bar {
     width: 100%;
     margin-top: 80px;
