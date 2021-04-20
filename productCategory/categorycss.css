@@ -221,10 +221,11 @@ a {
 
 .card-section .card-layout h4 {
     height: 60px;
-    font-size: 1.05rem;
+    font-size: 1.02rem;
     padding: 0 10px;
     color: #1e2e5e;
     font-weight: 500;
+    overflow: hidden;
 }
 
 .card-section .card-layout h5 {
