@@ -52,7 +52,7 @@ label {
     height: 37px;
     width: 37px;
     padding: 0 5px;
-    background-color: #008088;
+    background-color: #da847d;
     color: white;
 }
 
@@ -77,7 +77,7 @@ input {
 
 input:focus {
     outline: none;
-    box-shadow: 0px 0px 4px 0.8px #008088;
+    box-shadow: 0px 0px 4px 0.8px #da847d;
 }
 
 .forget {
@@ -85,7 +85,7 @@ input:focus {
     margin-right: -18px;
     display: flex;
     width: 22em;
-    color: #008088;
+    color: #da847d;
     justify-content: flex-end;
     font-size: .75em;
     font-weight: bold;
@@ -100,7 +100,7 @@ input:focus {
 
 .footer button {
     width: 15em;
-    background-color: #008088;
+    background-color: #da847d;
     color: white;
     border: none;
     padding: 7px;
@@ -115,12 +115,12 @@ input:focus {
 
 .footer-text a {
     text-decoration: none;
-    color: #008088;
+    color: #da847d;
     font-weight: bold;
 }
 
 .footer-text a:hover {
-    color: #1e212d;
+    color: #1e2e5e;
 }
 
 .footer button:hover {
