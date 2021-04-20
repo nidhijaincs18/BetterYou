@@ -44,7 +44,7 @@ $('body').on('click', '.add-to-cart ', function() {
     // Otherwise, convert the localStorage string to an array
     existing = existing ? JSON.parse(existing) : [];
 
-    value = { "productImage": productImage, "productName": productName, "price": price }
+    value = { "productImage": productImage.substring(3), "productName": productName, "price": price }
 
     var temp = false;
     $(existing).each(function(key, value) {
