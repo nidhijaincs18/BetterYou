@@ -54,6 +54,11 @@ a {
     flex-direction: row;
 }
 
+img {
+    height: 200px;
+    width: 100%;
+}
+
 #search input {
     width: 400px;
     height: 100%;
@@ -174,7 +179,7 @@ a {
 
 .card-section .card-layout img {
     height: 200px;
-    /* width: 100%; */
+    width: 100%;
 }
 
 #card-section .card-layout h4 {
