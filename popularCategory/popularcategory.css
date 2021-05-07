@@ -155,7 +155,8 @@ img {
 }
 
 #card-section .card-layout {
-    width: 230px;
+    min-width: 230px;
+    width: 22%;
     margin: 10px 14px 10px 20px;
     text-align: left;
     border-radius: 5px;
@@ -232,6 +233,12 @@ img {
 
 #card-section .card-layout:hover {
     box-shadow: 1px 1px 3px 2px rgb(165, 164, 164);
+}
+
+@media screen and (max-width:1400px) {
+    .card-section .card-layout {
+        width: 29%;
+    }
 }
 
 @media screen and (max-width:1250px) {
